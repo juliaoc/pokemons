@@ -1,0 +1,122 @@
+[
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg",
+  "command": "/usr/lib/ccache/g++  -I/home/julia/atividade2/ativ-2/abcg -I/home/julia/atividade2/ativ-2/abcg/external/cppitertools -I/home/julia/atividade2/ativ-2/abcg/external/fmt -I/home/julia/atividade2/ativ-2/abcg/external/glm/.. -I/home/julia/atividade2/ativ-2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/julia/atividade2/ativ-2/abcg/external -isystem /home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgApplication.cpp.o -c /home/julia/atividade2/ativ-2/abcg/abcgApplication.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/abcgApplication.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg",
+  "command": "/usr/lib/ccache/g++  -I/home/julia/atividade2/ativ-2/abcg -I/home/julia/atividade2/ativ-2/abcg/external/cppitertools -I/home/julia/atividade2/ativ-2/abcg/external/fmt -I/home/julia/atividade2/ativ-2/abcg/external/glm/.. -I/home/julia/atividade2/ativ-2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/julia/atividade2/ativ-2/abcg/external -isystem /home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgTimer.cpp.o -c /home/julia/atividade2/ativ-2/abcg/abcgTimer.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/abcgTimer.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg",
+  "command": "/usr/lib/ccache/g++  -I/home/julia/atividade2/ativ-2/abcg -I/home/julia/atividade2/ativ-2/abcg/external/cppitertools -I/home/julia/atividade2/ativ-2/abcg/external/fmt -I/home/julia/atividade2/ativ-2/abcg/external/glm/.. -I/home/julia/atividade2/ativ-2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/julia/atividade2/ativ-2/abcg/external -isystem /home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgException.cpp.o -c /home/julia/atividade2/ativ-2/abcg/abcgException.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/abcgException.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg",
+  "command": "/usr/lib/ccache/g++  -I/home/julia/atividade2/ativ-2/abcg -I/home/julia/atividade2/ativ-2/abcg/external/cppitertools -I/home/julia/atividade2/ativ-2/abcg/external/fmt -I/home/julia/atividade2/ativ-2/abcg/external/glm/.. -I/home/julia/atividade2/ativ-2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/julia/atividade2/ativ-2/abcg/external -isystem /home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgImage.cpp.o -c /home/julia/atividade2/ativ-2/abcg/abcgImage.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/abcgImage.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg",
+  "command": "/usr/lib/ccache/g++  -I/home/julia/atividade2/ativ-2/abcg -I/home/julia/atividade2/ativ-2/abcg/external/cppitertools -I/home/julia/atividade2/ativ-2/abcg/external/fmt -I/home/julia/atividade2/ativ-2/abcg/external/glm/.. -I/home/julia/atividade2/ativ-2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/julia/atividade2/ativ-2/abcg/external -isystem /home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgTrackball.cpp.o -c /home/julia/atividade2/ativ-2/abcg/abcgTrackball.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/abcgTrackball.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg",
+  "command": "/usr/lib/ccache/g++  -I/home/julia/atividade2/ativ-2/abcg -I/home/julia/atividade2/ativ-2/abcg/external/cppitertools -I/home/julia/atividade2/ativ-2/abcg/external/fmt -I/home/julia/atividade2/ativ-2/abcg/external/glm/.. -I/home/julia/atividade2/ativ-2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/julia/atividade2/ativ-2/abcg/external -isystem /home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgWindow.cpp.o -c /home/julia/atividade2/ativ-2/abcg/abcgWindow.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/abcgWindow.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg",
+  "command": "/usr/lib/ccache/g++  -I/home/julia/atividade2/ativ-2/abcg -I/home/julia/atividade2/ativ-2/abcg/external/cppitertools -I/home/julia/atividade2/ativ-2/abcg/external/fmt -I/home/julia/atividade2/ativ-2/abcg/external/glm/.. -I/home/julia/atividade2/ativ-2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/julia/atividade2/ativ-2/abcg/external -isystem /home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgUtil.cpp.o -c /home/julia/atividade2/ativ-2/abcg/abcgUtil.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/abcgUtil.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg",
+  "command": "/usr/lib/ccache/g++  -I/home/julia/atividade2/ativ-2/abcg -I/home/julia/atividade2/ativ-2/abcg/external/cppitertools -I/home/julia/atividade2/ativ-2/abcg/external/fmt -I/home/julia/atividade2/ativ-2/abcg/external/glm/.. -I/home/julia/atividade2/ativ-2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/julia/atividade2/ativ-2/abcg/external -isystem /home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o -c /home/julia/atividade2/ativ-2/abcg/abcgOpenGLError.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/abcgOpenGLError.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg",
+  "command": "/usr/lib/ccache/g++  -I/home/julia/atividade2/ativ-2/abcg -I/home/julia/atividade2/ativ-2/abcg/external/cppitertools -I/home/julia/atividade2/ativ-2/abcg/external/fmt -I/home/julia/atividade2/ativ-2/abcg/external/glm/.. -I/home/julia/atividade2/ativ-2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/julia/atividade2/ativ-2/abcg/external -isystem /home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o -c /home/julia/atividade2/ativ-2/abcg/abcgOpenGLFunction.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/abcgOpenGLFunction.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg",
+  "command": "/usr/lib/ccache/g++  -I/home/julia/atividade2/ativ-2/abcg -I/home/julia/atividade2/ativ-2/abcg/external/cppitertools -I/home/julia/atividade2/ativ-2/abcg/external/fmt -I/home/julia/atividade2/ativ-2/abcg/external/glm/.. -I/home/julia/atividade2/ativ-2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/julia/atividade2/ativ-2/abcg/external -isystem /home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o -c /home/julia/atividade2/ativ-2/abcg/abcgOpenGLImage.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/abcgOpenGLImage.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg",
+  "command": "/usr/lib/ccache/g++  -I/home/julia/atividade2/ativ-2/abcg -I/home/julia/atividade2/ativ-2/abcg/external/cppitertools -I/home/julia/atividade2/ativ-2/abcg/external/fmt -I/home/julia/atividade2/ativ-2/abcg/external/glm/.. -I/home/julia/atividade2/ativ-2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/julia/atividade2/ativ-2/abcg/external -isystem /home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o -c /home/julia/atividade2/ativ-2/abcg/abcgOpenGLShader.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/abcgOpenGLShader.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg",
+  "command": "/usr/lib/ccache/g++  -I/home/julia/atividade2/ativ-2/abcg -I/home/julia/atividade2/ativ-2/abcg/external/cppitertools -I/home/julia/atividade2/ativ-2/abcg/external/fmt -I/home/julia/atividade2/ativ-2/abcg/external/glm/.. -I/home/julia/atividade2/ativ-2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/julia/atividade2/ativ-2/abcg/external -isystem /home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o -c /home/julia/atividade2/ativ-2/abcg/abcgOpenGLWindow.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/abcgOpenGLWindow.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg/external/imgui",
+  "command": "/usr/lib/ccache/g++  -I/opt/local/include -I/usr/include/SDL2 -I/home/julia/atividade2/ativ-2/abcg/external/imgui -g -o CMakeFiles/imgui.dir/imgui.cpp.o -c /home/julia/atividade2/ativ-2/abcg/external/imgui/imgui.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/external/imgui/imgui.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg/external/imgui",
+  "command": "/usr/lib/ccache/g++  -I/opt/local/include -I/usr/include/SDL2 -I/home/julia/atividade2/ativ-2/abcg/external/imgui -g -o CMakeFiles/imgui.dir/imgui_demo.cpp.o -c /home/julia/atividade2/ativ-2/abcg/external/imgui/imgui_demo.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/external/imgui/imgui_demo.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg/external/imgui",
+  "command": "/usr/lib/ccache/g++  -I/opt/local/include -I/usr/include/SDL2 -I/home/julia/atividade2/ativ-2/abcg/external/imgui -g -o CMakeFiles/imgui.dir/imgui_draw.cpp.o -c /home/julia/atividade2/ativ-2/abcg/external/imgui/imgui_draw.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/external/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg/external/imgui",
+  "command": "/usr/lib/ccache/g++  -I/opt/local/include -I/usr/include/SDL2 -I/home/julia/atividade2/ativ-2/abcg/external/imgui -g -o CMakeFiles/imgui.dir/imgui_tables.cpp.o -c /home/julia/atividade2/ativ-2/abcg/external/imgui/imgui_tables.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/external/imgui/imgui_tables.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg/external/imgui",
+  "command": "/usr/lib/ccache/g++  -I/opt/local/include -I/usr/include/SDL2 -I/home/julia/atividade2/ativ-2/abcg/external/imgui -g -o CMakeFiles/imgui.dir/imgui_widgets.cpp.o -c /home/julia/atividade2/ativ-2/abcg/external/imgui/imgui_widgets.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/external/imgui/imgui_widgets.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg/external/imgui",
+  "command": "/usr/lib/ccache/g++  -I/opt/local/include -I/usr/include/SDL2 -I/home/julia/atividade2/ativ-2/abcg/external/imgui -g -o CMakeFiles/imgui.dir/imgui_impl_sdl2.cpp.o -c /home/julia/atividade2/ativ-2/abcg/external/imgui/imgui_impl_sdl2.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/external/imgui/imgui_impl_sdl2.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg/external/imgui",
+  "command": "/usr/lib/ccache/g++  -I/opt/local/include -I/usr/include/SDL2 -I/home/julia/atividade2/ativ-2/abcg/external/imgui -g -o CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o -c /home/julia/atividade2/ativ-2/abcg/external/imgui/imgui_impl_opengl3.cpp",
+  "file": "/home/julia/atividade2/ativ-2/abcg/external/imgui/imgui_impl_opengl3.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/abcg/external/fmt",
+  "command": "/usr/lib/ccache/g++  -I/home/julia/atividade2/ativ-2/abcg/external/fmt -g -std=gnu++20 -o CMakeFiles/fmt.dir/format.cc.o -c /home/julia/atividade2/ativ-2/abcg/external/fmt/format.cc",
+  "file": "/home/julia/atividade2/ativ-2/abcg/external/fmt/format.cc"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/examples/pikachu",
+  "command": "/usr/lib/ccache/g++  -I/home/julia/atividade2/ativ-2/abcg -I/home/julia/atividade2/ativ-2/abcg/external/cppitertools -I/home/julia/atividade2/ativ-2/abcg/external/fmt -I/home/julia/atividade2/ativ-2/abcg/external/glm/.. -I/home/julia/atividade2/ativ-2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/julia/atividade2/ativ-2/abcg/external -isystem /home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader -g -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/pikachu.dir/main.cpp.o -c /home/julia/atividade2/ativ-2/examples/pikachu/main.cpp",
+  "file": "/home/julia/atividade2/ativ-2/examples/pikachu/main.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/examples/pikachu",
+  "command": "/usr/lib/ccache/g++  -I/home/julia/atividade2/ativ-2/abcg -I/home/julia/atividade2/ativ-2/abcg/external/cppitertools -I/home/julia/atividade2/ativ-2/abcg/external/fmt -I/home/julia/atividade2/ativ-2/abcg/external/glm/.. -I/home/julia/atividade2/ativ-2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/julia/atividade2/ativ-2/abcg/external -isystem /home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader -g -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/pikachu.dir/model.cpp.o -c /home/julia/atividade2/ativ-2/examples/pikachu/model.cpp",
+  "file": "/home/julia/atividade2/ativ-2/examples/pikachu/model.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/examples/pikachu",
+  "command": "/usr/lib/ccache/g++  -I/home/julia/atividade2/ativ-2/abcg -I/home/julia/atividade2/ativ-2/abcg/external/cppitertools -I/home/julia/atividade2/ativ-2/abcg/external/fmt -I/home/julia/atividade2/ativ-2/abcg/external/glm/.. -I/home/julia/atividade2/ativ-2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/julia/atividade2/ativ-2/abcg/external -isystem /home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader -g -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/pikachu.dir/window.cpp.o -c /home/julia/atividade2/ativ-2/examples/pikachu/window.cpp",
+  "file": "/home/julia/atividade2/ativ-2/examples/pikachu/window.cpp"
+},
+{
+  "directory": "/home/julia/atividade2/ativ-2/build/examples/pikachu",
+  "command": "/usr/lib/ccache/g++  -I/home/julia/atividade2/ativ-2/abcg -I/home/julia/atividade2/ativ-2/abcg/external/cppitertools -I/home/julia/atividade2/ativ-2/abcg/external/fmt -I/home/julia/atividade2/ativ-2/abcg/external/glm/.. -I/home/julia/atividade2/ativ-2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/julia/atividade2/ativ-2/abcg/external -isystem /home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader -g -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/pikachu.dir/trackball.cpp.o -c /home/julia/atividade2/ativ-2/examples/pikachu/trackball.cpp",
+  "file": "/home/julia/atividade2/ativ-2/examples/pikachu/trackball.cpp"
+}
+]

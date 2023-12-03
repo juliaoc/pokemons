@@ -1,0 +1,309 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						9
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "abcg",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-abcg-Debug-0145cbc06d72cc239d33.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "abcg",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "abcg/external",
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"jsonFile" : "directory-abcg.external-Debug-4c756a9ce7fbae04ced4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "abcg/external"
+				},
+				{
+					"build" : "abcg/external/tiny_obj_loader",
+					"jsonFile" : "directory-abcg.external.tiny_obj_loader-Debug-98b5a5e422dcfe342652.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "abcg/external/tiny_obj_loader"
+				},
+				{
+					"build" : "abcg/external/imgui",
+					"jsonFile" : "directory-abcg.external.imgui-Debug-22261efdf06059deae00.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 3,
+					"source" : "abcg/external/imgui",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "abcg/external/cppitertools",
+					"jsonFile" : "directory-abcg.external.cppitertools-Debug-60d25409e716e9a630b4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 4,
+					"source" : "abcg/external/cppitertools"
+				},
+				{
+					"build" : "abcg/external/fmt",
+					"jsonFile" : "directory-abcg.external.fmt-Debug-e4ab32fc36c044588469.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 5,
+					"source" : "abcg/external/fmt",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "abcg/external/glm",
+					"jsonFile" : "directory-abcg.external.glm-Debug-2fa048d9ea6ee800c678.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "abcg/external/glm"
+				},
+				{
+					"build" : "abcg/external/gsl",
+					"jsonFile" : "directory-abcg.external.gsl-Debug-7c2707ed0dc68a4188db.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 6,
+					"source" : "abcg/external/gsl"
+				},
+				{
+					"build" : "examples",
+					"childIndexes" : 
+					[
+						10
+					],
+					"jsonFile" : "directory-examples-Debug-1c8b83b621b6ef38a245.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "examples"
+				},
+				{
+					"build" : "examples/pikachu",
+					"jsonFile" : "directory-examples.pikachu-Debug-8d406716e179667ac9e8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 9,
+					"projectIndex" : 7,
+					"source" : "examples/pikachu",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						7
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						9
+					],
+					"name" : "abcg",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						2,
+						7
+					],
+					"name" : "external",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "tiny_obj_loader",
+					"parentIndex" : 1
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "imgui",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "cppitertools",
+					"parentIndex" : 1
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "fmt",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "gsl",
+					"parentIndex" : 1
+				},
+				{
+					"directoryIndexes" : 
+					[
+						10
+					],
+					"name" : "pikachu",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "abcg::@fa5a221ce82f0a06330e",
+					"jsonFile" : "target-abcg-Debug-994e8b48f5e60c70ce7c.json",
+					"name" : "abcg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "fmt::@05cd5962bb4e2bff130e",
+					"jsonFile" : "target-fmt-Debug-9579a3c1bb1666497f21.json",
+					"name" : "fmt",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "imgui::@a1283253420173d9f2e2",
+					"jsonFile" : "target-imgui-Debug-d06de78dcab6b5a402bf.json",
+					"name" : "imgui",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "pikachu::@570ece57798f638ceb8e",
+					"jsonFile" : "target-pikachu-Debug-9f1e472f4d61efd83135.json",
+					"name" : "pikachu",
+					"projectIndex" : 7
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/julia/atividade2/ativ-2/build",
+		"source" : "/home/julia/atividade2/ativ-2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
