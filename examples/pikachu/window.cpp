@@ -2,29 +2,19 @@
 
 #include <glm/gtc/random.hpp>
 #include <glm/gtx/fast_trigonometry.hpp>
-#include <fmt/core.h>
-#include <imgui.h>
-#include <cppitertools/itertools.hpp>
-#include <glm/gtc/matrix_inverse.hpp>
 
 void Window::onEvent(SDL_Event const &event) {
-  glm::ivec2 mousePosition;
-  SDL_GetMouseState(&mousePosition.x, &mousePosition.y);
+  // Keyboard events
+  if (event.type == SDL_KEYDOWN) {
+    if (event.key.keysym.sym == SDLK_LEFT || event.key.keysym.sym == SDLK_a) {
+      // Mover o carro para a esquerda
+      carro0.m_position.x -= 0.01f;
+    }
 
-  if (event.type == SDL_MOUSEMOTION) {
-    m_trackBall.mouseMove(mousePosition);
-  }
-  if (event.type == SDL_MOUSEBUTTONDOWN &&
-      event.button.button == SDL_BUTTON_LEFT) {
-    m_trackBall.mousePress(mousePosition);
-  }
-  if (event.type == SDL_MOUSEBUTTONUP &&
-      event.button.button == SDL_BUTTON_LEFT) {
-    m_trackBall.mouseRelease(mousePosition);
-  }
-  if (event.type == SDL_MOUSEWHEEL) {
-    m_zoom += (event.wheel.y > 0 ? -1.0f : 1.0f) / 5.0f;
-    m_zoom = glm::clamp(m_zoom, -1.5f, 1.0f);
+    if (event.key.keysym.sym == SDLK_RIGHT || event.key.keysym.sym == SDLK_d) {
+      // Mover o carro para a direita
+      carro0.m_position.x += 0.01f;
+    }
   }
 }
 
@@ -40,99 +30,100 @@ void Window::onCreate() {
                                  {.source = assetsPath + "depth.frag",
                                   .stage = abcg::ShaderStage::Fragment}});
 
+  m_model.loadObj(assetsPath + "box.obj");
+  m_model.setupVAO(m_program);
 
-  loadModel(assetsPath + "pokemon_PIKACHU.obj");
-  m_model.setupVAO(m_program); // manter ou não?
+  m_carro.loadObj(assetsPath + "pokemon_PIKACHU.obj");
+  m_carro.setupVAO(m_program);
+  m_trianglesToDraw = m_carro.getNumTriangles();
 
-  m_trackBall.setAxis(glm::normalize(glm::vec3(-1, 0.1, 0.1)));
-  m_trackBall.setVelocity(0.001f);
+  // Inicializa posição do carro na tela
+  carro0.m_position = glm::vec3(0.0f, -0.02f, -0.05f);
+  // carro1.m_position = glm::vec3(-0.05f, -0.02f, -0.005f);
+  carro1.m_position = glm::vec3(glm::linearRand(-0.05f, 0.05f), -0.02f, -0.005f);
 
-  for (const auto index : iter::range(m_numPokemon)) {
-    auto &position{m_pokemonPositions.at(index)};
-    auto &rotation{m_pokemonRotations.at(index)};
 
-    randomizePokemon(position, rotation);
+  // Camera at (0,0,0) and looking towards the negative z
+  glm::vec3 const eye{0.0f, 0.0f, 0.0f};
+  glm::vec3 const at{0.0f, 0.0f, -1.0f};
+  glm::vec3 const up{0.0f, 1.0f, 0.0f};
+  m_viewMatrix = glm::lookAt(eye, at, up);
+
+  // Setup stars
+  for (auto &star : m_stars) {
+    randomizeStar(star);
   }
 }
 
-void Window::loadModel(std::string_view path) {
-  m_model.loadFromFile(path);
-  m_model.setupVAO(m_program);
-  m_trianglesToDraw = m_model.getNumTriangles();
-
-}
-
-void Window::randomizePokemon(glm::vec3 &position, glm::vec3 &rotation) {
-  std::uniform_real_distribution<float> distPosXY(-20.0f, 20.0f);
+void Window::randomizeStar(Star &star) {
+  // Random position: x and y in [-20, 20), z in [-100, 0)
+  std::uniform_real_distribution<float> distPosY(-20.0f, 40.0f);  
   std::uniform_real_distribution<float> distPosZ(-100.0f, 0.0f);
 
-  position = glm::vec3(distPosXY(m_randomEngine), distPosXY(m_randomEngine),
-                       distPosZ(m_randomEngine));
+  // Randomly select one of the two sides
+  std::uniform_int_distribution<int> distPosSide(0, 1);
+  int sorteia_lado = distPosSide(m_randomEngine);
 
-  std::uniform_real_distribution<float> distRotAxis(-1.0f, 1.0f);
+  std::uniform_real_distribution<float> distPosX;
+  
+  if (sorteia_lado == 0) {
+    distPosX = std::uniform_real_distribution<float>(25.0f, 40.0f);
+  } else {
+    distPosX = std::uniform_real_distribution<float>(-40.0f, -25.0f);
+  } 
 
-  rotation = glm::normalize(glm::vec3(distRotAxis(m_randomEngine),
-                                      distRotAxis(m_randomEngine),
-                                      distRotAxis(m_randomEngine)));
+  star.m_position =
+        glm::vec3(distPosX(m_randomEngine), distPosY(m_randomEngine),
+                  distPosZ(m_randomEngine));
+
+  // Random rotation axis
+  star.m_rotationAxis = glm::sphericalRand(1.0f);
 }
 
 void Window::onUpdate() {
-
-  m_modelMatrix = m_trackBall.getRotation();
-  m_eyePosition = glm::vec3(0.0f, 0.0f, 2.0f + m_zoom);
-  m_viewMatrix = glm::lookAt(m_eyePosition, glm::vec3(0.0f, 0.0f, 0.0f),
-                             glm::vec3(0.0f, 1.0f, 0.0f));
-
   // Increase angle by 90 degrees per second
-  float deltaTime{static_cast<float>(getDeltaTime())};
-  m_angle = m_angle + glm::radians(90.0f) * deltaTime;
+  auto const deltaTime{gsl::narrow_cast<float>(getDeltaTime())};
+  m_angle = glm::wrapAngle(m_angle + glm::radians(90.0f) * deltaTime);
 
-  // Update pokemons
-  for (const auto index : iter::range(m_numPokemon)) {
-    auto &position{m_pokemonPositions.at(index)};
-    auto &rotation{m_pokemonRotations.at(index)};
-
+  // Update stars
+  for (auto &star : m_stars) {
     // Increase z by 10 units per second
-    position.z += deltaTime * 10.0f;
+    star.m_position.z += deltaTime * 10.0f;
 
     // If this star is behind the camera, select a new random position &
     // orientation and move it back to -100
-    if (position.z > 0.1f) {
-      randomizePokemon(position, rotation);
-      position.z = -100.0f; // Back to -100
+    if (star.m_position.z > 0.1f) {
+      randomizeStar(star);
+      star.m_position.z = -100.0f; // Back to -100
+    }
+
+    carro1.m_position.z += deltaTime * 0.001f * 0.5f;
+    if (carro1.m_position.z > 0.01f) {
+      randomizeStar(star);
+      carro1.m_position.z = -2.0f; // Back to -100
     }
   }
 }
 
 void Window::onPaint() {
-  auto aspect{static_cast<float>(m_viewportWidth) /
-              static_cast<float>(m_viewportHeight)};
-  
-  m_projMatrix = glm::perspective(glm::radians(m_FOV), aspect, 0.01f, 100.0f);
-  glDisable(GL_CULL_FACE);
-  glFrontFace(GL_CCW);
-  m_model.setupVAO(m_program);
-
-  onUpdate();
-
   abcg::glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-  abcg::glViewport(0, 0, m_viewportWidth, m_viewportHeight);
+
+  abcg::glViewport(0, 0, m_viewportSize.x, m_viewportSize.y);
 
   abcg::glUseProgram(m_program);
 
   // Get location of uniform variables
-  GLint viewMatrixLoc{abcg::glGetUniformLocation(m_program, "viewMatrix")};
-  GLint projMatrixLoc{abcg::glGetUniformLocation(m_program, "projMatrix")};
-  GLint modelMatrixLoc{
-  abcg::glGetUniformLocation(m_program, "modelMatrix")};
-  GLint colorLoc{abcg::glGetUniformLocation(m_program, "color")};
+  auto const viewMatrixLoc{abcg::glGetUniformLocation(m_program, "viewMatrix")};
+  auto const projMatrixLoc{abcg::glGetUniformLocation(m_program, "projMatrix")};
+  auto const modelMatrixLoc{
+      abcg::glGetUniformLocation(m_program, "modelMatrix")};
+  auto const colorLoc{abcg::glGetUniformLocation(m_program, "color")};
 
   // Set uniform variables that have the same value for every model
   abcg::glUniformMatrix4fv(viewMatrixLoc, 1, GL_FALSE, &m_viewMatrix[0][0]);
   abcg::glUniformMatrix4fv(projMatrixLoc, 1, GL_FALSE, &m_projMatrix[0][0]);
+  // abcg::glUniform4f(colorLoc, 1.0f, 1.0f, 1.0f, 1.0f); // White
 
-    // Set uniform variables for the current model
-  abcg::glUniformMatrix4fv(modelMatrixLoc, 1, GL_FALSE, &m_modelMatrix[0][0]);
 
   if (m_currentPokemonIndex == 0) {
     abcg::glUniform4f(colorLoc, 1.0f, 0.843137255f, 0.0f, 1.0f); // Yellow
@@ -145,21 +136,17 @@ void Window::onPaint() {
   } 
   if (m_currentPokemonIndex == 3) {
     abcg::glUniform4f(colorLoc, 1.0f, 0.752941176f, 0.796078431f, 1.0f); // PINK
-  } 
+  }
 
   m_model.render(m_trianglesToDraw);
-
-  // Render each Pokemon
-  for (const auto index : iter::range(m_numPokemon)) {
-
-    auto &position{m_pokemonPositions.at(index)};
-    auto &rotation{m_pokemonRotations.at(index)};
-
-    // Compute model matrix of the current pokemon
+  
+  // Render each star
+  for (auto &star : m_stars) {
+    // Compute model matrix of the current star
     glm::mat4 modelMatrix{1.0f};
-    modelMatrix = glm::translate(modelMatrix, position);
+    modelMatrix = glm::translate(modelMatrix, star.m_position);
     modelMatrix = glm::scale(modelMatrix, glm::vec3(0.2f));
-    modelMatrix = glm::rotate(modelMatrix, m_angle, rotation);
+    modelMatrix = glm::rotate(modelMatrix, m_angle, star.m_rotationAxis);
 
     // Set uniform variable
     abcg::glUniformMatrix4fv(modelMatrixLoc, 1, GL_FALSE, &modelMatrix[0][0]);
@@ -167,66 +154,121 @@ void Window::onPaint() {
     m_model.render();
   }
 
+  // Desenha pista:
+  pista1.m_position = glm::vec3(0.0f,-10.0f,-30.0f);
+  pista1.m_rotationAxis = glm::vec3(0.2f,0.8f,0.3f);
+
+  // Compute model matrix of the current star
+  glm::mat4 matrizPista{1.0f};
+  matrizPista = glm::translate(matrizPista, pista1.m_position);
+  matrizPista = glm::scale(matrizPista, glm::vec3(60.0f,2.0f,240.0f));
+  pista1.m_rotationAxis = glm::vec3(1.0f,0.0f,0.0f);
+  angulo_pista = glm::radians(20.0f);
+  matrizPista = glm::rotate(matrizPista, angulo_pista, pista1.m_rotationAxis);
+
+  // Set uniform variable
+  abcg::glUniformMatrix4fv(modelMatrixLoc, 1, GL_FALSE, &matrizPista[0][0]);
+
+  m_model.render();
+
+// =============================================================================
+
+  // Desenha carro0:
+  pista0.m_position = glm::vec3(0.0f,-0.0f,-90.0f);
+  pista0.m_rotationAxis = glm::vec3(0.2f,0.8f,0.3f);
+
+  glm::mat4 matrizCarro0{1.0f};
+  matrizCarro0 = glm::translate(matrizCarro0, carro0.m_position);
+  matrizCarro0 = glm::scale(matrizCarro0, glm::vec3(0.02f,0.02f,0.02f));
+
+  pista0.m_rotationAxis = glm::vec3(1.0f,0.0f,0.0f);
+  angulo_carro0 = glm::radians(0.0f);
+  matrizCarro0 = glm::rotate(matrizCarro0, angulo_carro0, pista0.m_rotationAxis);
+  // Set uniform variable
+  abcg::glUniformMatrix4fv(modelMatrixLoc, 1, GL_FALSE, &matrizCarro0[0][0]);
+
+  m_carro.render();
+
+// =============================================================================
+
+  // Desenha carro1:
+  pista1.m_position = glm::vec3(0.0f,-0.0f,-90.0f);
+  pista1.m_rotationAxis = glm::vec3(0.2f,0.8f,0.3f);
+
+  glm::mat4 matrizCarro1{1.0f};
+  matrizCarro1 = glm::translate(matrizCarro1, carro1.m_position);
+  matrizCarro1 = glm::scale(matrizCarro1, glm::vec3(0.02f,0.02f,0.02f));
+
+  pista1.m_rotationAxis = glm::vec3(1.0f,0.0f,0.0f);
+  angulo_carro1 = glm::radians(20.0f);
+  matrizCarro1 = glm::rotate(matrizCarro1, angulo_carro1, pista1.m_rotationAxis);
+
+  // Set uniform variable
+  abcg::glUniformMatrix4fv(modelMatrixLoc, 1, GL_FALSE, &matrizCarro1[0][0]);
+
+  m_carro.render();
+
+  abcg::glUseProgram(0);
 }
 
 void Window::onPaintUI() {
   abcg::OpenGLWindow::onPaintUI();
 
   {
-    auto size{ImVec2(400, 85)};
-    auto position{ImVec2((m_viewportWidth - size.x) / 2.0f,
-                         (m_viewportHeight - size.y) / 2.0f - 150.0f)};
-    ImGui::SetNextWindowPos(position);
-    ImGui::SetNextWindowSize(size);
-    ImGuiWindowFlags flags{ImGuiWindowFlags_NoBackground |
-                           ImGuiWindowFlags_NoTitleBar |
-                           ImGuiWindowFlags_NoInputs};
-    ImGui::Begin("Inicio", nullptr, flags);
-    ImGui::End();
-
-  }
-
-  {
+    auto const widgetSize{ImVec2(218, 62)};
     auto const assetsPath{abcg::Application::getAssetsPath()};
-    auto widgetSize{ImVec2(180, 40)};
-    ImGui::SetNextWindowPos(ImVec2(m_viewportWidth - widgetSize.x - 5, m_viewportHeight - widgetSize.y - 5));
+    ImGui::SetNextWindowPos(ImVec2(m_viewportSize.x - widgetSize.x - 5, 5));
     ImGui::SetNextWindowSize(widgetSize);
-    auto flags{ImGuiWindowFlags_NoDecoration};
-    ImGui::Begin("Widget window", nullptr, flags);
+    ImGui::Begin("Widget window", nullptr, ImGuiWindowFlags_NoDecoration);
 
-    static std::size_t currentIndex{};
+    {
+      ImGui::PushItemWidth(120);
+      static std::size_t currentIndex{};
+      std::vector<std::string> const comboItems{"Perspective", "Orthographic"};
 
-    ImGui::PushItemWidth(120);
-    if (ImGui::BeginCombo("Pokemon", m_pokemonNames.at(currentIndex))) {
-      for (auto index : iter::range(m_pokemonNames.size())) {
-        const bool isSelected{currentIndex == index};
-        if (ImGui::Selectable(m_pokemonNames.at(index), isSelected))
-          currentIndex = index;
-        if (isSelected) ImGui::SetItemDefaultFocus();
+      if (ImGui::BeginCombo("Pokemon",
+                            m_pokemonNames.at(currentIndex))) {
+        for (auto index : iter::range(m_pokemonNames.size())) {
+          const bool isSelected{currentIndex == index};
+          if (ImGui::Selectable(m_pokemonNames.at(index), isSelected))
+            currentIndex = index;
+          if (isSelected)
+            ImGui::SetItemDefaultFocus();
+        }
+        ImGui::EndCombo();
       }
-      ImGui::EndCombo();
-    }
-    ImGui::PopItemWidth();
+      ImGui::PopItemWidth();
 
-    if (static_cast<int>(currentIndex) != m_currentPokemonIndex) {
-      m_currentPokemonIndex = currentIndex;
+      ImGui::PushItemWidth(170);
+      auto const aspect{gsl::narrow<float>(m_viewportSize.x) /
+                        gsl::narrow<float>(m_viewportSize.y)};
+      
+      m_projMatrix =
+            glm::perspective(glm::radians(m_FOV), aspect, 0.01f, 100.0f);
 
-      m_model.loadFromFile(fmt::format("{}pokemon_{}.obj", assetsPath, m_pokemonNames.at(m_currentPokemonIndex)));
-      m_model.setupVAO(m_program);
-      m_trianglesToDraw = m_model.getNumTriangles();
+      ImGui::SliderFloat("FOV", &m_FOV, 5.0f, 179.0f, "%.0f degrees");
+      
+      ImGui::PopItemWidth();
+
+      if (static_cast<int>(currentIndex) != m_currentPokemonIndex) {
+        m_currentPokemonIndex = currentIndex;
+
+        m_carro.loadObj(fmt::format("{}pokemon_{}.obj", assetsPath, m_pokemonNames.at(m_currentPokemonIndex)));
+        m_carro.setupVAO(m_program);
+        m_trianglesToDraw = m_carro.getNumTriangles();
+
+        
+      }
     }
+
     ImGui::End();
-    
-}
+  }
 }
 
-void Window::onResize(glm::ivec2 const &size) {
-  m_viewportWidth = size.x;
-  m_viewportHeight = size.y;
-
-  m_trackBall.resizeViewport(size.x, size.y);
-}
+void Window::onResize(glm::ivec2 const &size) { m_viewportSize = size; }
 
 void Window::onDestroy() {
+  m_model.destroy();
+  m_carro.destroy();
   abcg::glDeleteProgram(m_program);
 }

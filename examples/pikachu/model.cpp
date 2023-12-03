@@ -10,11 +10,11 @@ template <> struct std::hash<Vertex> {
   }
 };
 
-Model::~Model() {
-  glDeleteBuffers(1, &m_EBO);
-  glDeleteBuffers(1, &m_VBO);
-  glDeleteVertexArrays(1, &m_VAO);
-}
+// Model::~Model() {
+//   glDeleteBuffers(1, &m_EBO);
+//   glDeleteBuffers(1, &m_VBO);
+//   glDeleteVertexArrays(1, &m_VAO);
+// }
 
 void Model::createBuffers() {
   // Delete previous buffers
@@ -38,7 +38,7 @@ void Model::createBuffers() {
   abcg::glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 }
 
-void Model::loadFromFile(std::string_view path, bool standardize) {
+void Model::loadObj(std::string_view path, bool standardize) {
   tinyobj::ObjReader reader;
 
   if (!reader.ParseFromFile(path.data())) {
@@ -152,8 +152,8 @@ void Model::standardize() {
   }
 }
 
-// void Model::destroy() const {
-//   abcg::glDeleteBuffers(1, &m_EBO);
-//   abcg::glDeleteBuffers(1, &m_VBO);
-//   abcg::glDeleteVertexArrays(1, &m_VAO);
-// }
+void Model::destroy() const {
+  abcg::glDeleteBuffers(1, &m_EBO);
+  abcg::glDeleteBuffers(1, &m_VBO);
+  abcg::glDeleteVertexArrays(1, &m_VAO);
+}

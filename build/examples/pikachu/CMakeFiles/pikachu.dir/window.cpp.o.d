@@ -2,12 +2,9 @@ examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.o: \
  /home/isa/Documents/pokemons/examples/pikachu/window.cpp \
  /usr/include/stdc-predef.h \
  /home/isa/Documents/pokemons/examples/pikachu/window.hpp \
- /home/isa/Documents/pokemons/abcg/external/imgui/imgui.h \
- /home/isa/Documents/pokemons/abcg/external/imgui/imconfig.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h /usr/include/string.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/c++/11/random /usr/include/c++/11/cmath \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
@@ -15,16 +12,11 @@ examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h /usr/include/assert.h /usr/include/c++/11/random \
- /usr/include/c++/11/cmath \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
  /usr/include/c++/11/pstl/pstl_config.h \
  /usr/include/c++/11/bits/cpp_type_traits.h \
  /usr/include/c++/11/ext/type_traits.h /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
@@ -40,8 +32,11 @@ examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/include/c++/11/bits/std_abs.h /usr/include/stdlib.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
@@ -101,7 +96,8 @@ examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.o: \
  /usr/include/c++/11/bits/memoryfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
- /usr/include/wchar.h /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -189,7 +185,9 @@ examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.o: \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
  /usr/include/SDL2/SDL_platform.h /usr/include/SDL2/begin_code.h \
  /usr/include/SDL2/close_code.h /usr/include/c++/11/stdlib.h \
- /usr/include/inttypes.h /usr/include/c++/11/math.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/inttypes.h \
+ /usr/include/c++/11/math.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
  /usr/include/SDL2/SDL_assert.h /usr/include/SDL2/SDL_atomic.h \
  /usr/include/SDL2/SDL_platform.h /usr/include/SDL2/SDL_audio.h \
  /usr/include/SDL2/SDL_error.h /usr/include/SDL2/SDL_endian.h \
@@ -299,10 +297,10 @@ examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.o: \
  /home/isa/Documents/pokemons/abcg/external/cppitertools/itertools.hpp \
  /home/isa/Documents/pokemons/abcg/external/cppitertools/accumulate.hpp \
  /home/isa/Documents/pokemons/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
- /usr/include/c++/11/cassert /usr/include/c++/11/functional \
- /usr/include/c++/11/tuple /usr/include/c++/11/utility \
- /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/array \
- /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/cassert /usr/include/assert.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/tuple \
+ /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
  /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map \
@@ -618,6 +616,8 @@ examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.o: \
  /home/isa/Documents/pokemons/abcg/external/gsl/pointers \
  /home/isa/Documents/pokemons/abcg/external/gsl/string_span \
  /home/isa/Documents/pokemons/abcg/external/gsl/span_ext \
+ /home/isa/Documents/pokemons/abcg/external/imgui/imgui.h \
+ /home/isa/Documents/pokemons/abcg/external/imgui/imconfig.h \
  /home/isa/Documents/pokemons/abcg/external/tiny_obj_loader/tiny_obj_loader.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/stl_map.h \
@@ -635,8 +635,6 @@ examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.o: \
  /home/isa/Documents/pokemons/abcg/abcgOpenGLWindow.hpp \
  /home/isa/Documents/pokemons/abcg/abcgOpenGLFunction.hpp \
  /home/isa/Documents/pokemons/examples/pikachu/model.hpp \
- /home/isa/Documents/pokemons/examples/pikachu/trackball.hpp \
- /home/isa/Documents/pokemons/abcg/abcg.hpp \
  /home/isa/Documents/pokemons/abcg/external/glm/gtc/random.hpp \
  /home/isa/Documents/pokemons/abcg/external/glm/gtc/random.inl \
  /home/isa/Documents/pokemons/abcg/external/glm/gtx/fast_trigonometry.hpp \

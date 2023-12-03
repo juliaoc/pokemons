@@ -23,6 +23,7 @@ void Window::onCreate() {
 
   abcg::glClearColor(0, 0, 0, 1);
   abcg::glEnable(GL_DEPTH_TEST);
+  abcg::glDepthFunc(GL_LESS);
 
   m_program =
       abcg::createOpenGLProgram({{.source = assetsPath + "depth.vert",
@@ -33,7 +34,7 @@ void Window::onCreate() {
   m_model.loadObj(assetsPath + "box.obj");
   m_model.setupVAO(m_program);
 
-  m_carro.loadObj(assetsPath + "modelo_carro.obj");
+  m_carro.loadObj(assetsPath + "pokemon_PIKACHU.obj");
   m_carro.setupVAO(m_program);
 
   // Inicializa posição do carro na tela

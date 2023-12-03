@@ -1,12 +1,10 @@
 #ifndef WINDOW_HPP_
 #define WINDOW_HPP_
-#include <imgui.h>
 
 #include <random>
 
 #include "abcgOpenGL.hpp"
 #include "model.hpp"
-#include "trackball.hpp"
 
 class Window : public abcg::OpenGLWindow {
 protected:
@@ -19,40 +17,52 @@ protected:
   void onDestroy() override;
 
 private:
-  static const int m_numPokemon{500};
-  int m_viewportWidth{};
-  int m_viewportHeight{};
+  std::default_random_engine m_randomEngine;
 
   glm::ivec2 m_viewportSize{};
-
-  Model m_model;
   int m_trianglesToDraw{};
 
-  TrackBall m_trackBall;
-  float m_zoom{};
+  Model m_model;
+  Model m_carro;
+  Model m_pista;
 
-  glm::vec3 m_eyePosition{};
-  glm::mat4 m_modelMatrix{1.0f};
+  struct Star {
+    glm::vec3 m_position{};
+    glm::vec3 m_rotationAxis{};
+  };
+
+  struct Carro {
+    glm::vec3 m_position{};
+    glm::vec3 m_rotationAxis{};
+  };
+
+  struct Floor {
+    glm::vec3 m_position{};
+    glm::vec3 m_rotationAxis{};
+  };
+
+  Floor pista0;
+  Floor pista1;
+
+  Carro carro0;
+  Carro carro1;
+
+  std::array<Star, 500> m_stars;
+
+  float m_angle{};
+  float angulo_carro0{};
+  float angulo_carro1{};
+  float angulo_pista{};
+
+
   glm::mat4 m_viewMatrix{1.0f};
   glm::mat4 m_projMatrix{1.0f};
+  float m_FOV{150.0f};
 
-  std::default_random_engine m_randomEngine;
-  //float m_FOV{30.0f};
-  float m_FOV{90.0f};
-
-
-  std::array<glm::vec3, m_numPokemon> m_pokemonPositions;
-  std::array<glm::vec3, m_numPokemon> m_pokemonRotations;
-
-  void randomizePokemon(glm::vec3 &position, glm::vec3 &rotation);
-
-   float m_angle{};
   GLuint m_program{};
   const std::vector<const char *> m_pokemonNames{"PIKACHU", "EEVEE", "EKANS", "JIGGLYPUFF"};
   int m_currentPokemonIndex{0};
-
-  void loadModel(std::string_view path);
-
+  void randomizeStar(Star &star);
 };
 
 #endif
