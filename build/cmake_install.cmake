@@ -1,4 +1,4 @@
-# Install script for directory: /home/julia/atividade2/ativ-2
+# Install script for directory: /home/isa/Documents/pokemons
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,12 +44,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/julia/atividade2/ativ-2/build/abcg/cmake_install.cmake")
+  include("/home/isa/Documents/pokemons/build/abcg/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/julia/atividade2/ativ-2/build/examples/cmake_install.cmake")
+  include("/home/isa/Documents/pokemons/build/examples/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/julia/atividade2/ativ-2/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/isa/Documents/pokemons/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

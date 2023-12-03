@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/julia/atividade2/ativ-2
+CMAKE_SOURCE_DIR = /home/isa/Documents/pokemons
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/julia/atividade2/ativ-2/build
+CMAKE_BINARY_DIR = /home/isa/Documents/pokemons/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/julia/atividade2/ativ-2/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/julia/atividade2/ativ-2/build/CMakeFiles /home/julia/atividade2/ativ-2/build/abcg/external/imgui//CMakeFiles/progress.marks
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/external/imgui/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/julia/atividade2/ativ-2/build/CMakeFiles 0
+	cd /home/isa/Documents/pokemons/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/isa/Documents/pokemons/build/CMakeFiles /home/isa/Documents/pokemons/build/abcg/external/imgui//CMakeFiles/progress.marks
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/external/imgui/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isa/Documents/pokemons/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/external/imgui/clean
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/external/imgui/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/external/imgui/preinstall
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/external/imgui/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/external/imgui/preinstall
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/external/imgui/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/julia/atividade2/ativ-2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/isa/Documents/pokemons/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 abcg/external/imgui/CMakeFiles/imgui.dir/rule:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/external/imgui/CMakeFiles/imgui.dir/rule
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/external/imgui/CMakeFiles/imgui.dir/rule
 .PHONY : abcg/external/imgui/CMakeFiles/imgui.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ imgui: abcg/external/imgui/CMakeFiles/imgui.dir/rule
 
 # fast build rule for target.
 imgui/fast:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/build
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/build
 .PHONY : imgui/fast
 
 imgui.o: imgui.cpp.o
@@ -135,7 +135,7 @@ imgui.o: imgui.cpp.o
 
 # target to build an object file
 imgui.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui.cpp.o
 .PHONY : imgui.cpp.o
 
 imgui.i: imgui.cpp.i
@@ -143,7 +143,7 @@ imgui.i: imgui.cpp.i
 
 # target to preprocess a source file
 imgui.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui.cpp.i
 .PHONY : imgui.cpp.i
 
 imgui.s: imgui.cpp.s
@@ -151,7 +151,7 @@ imgui.s: imgui.cpp.s
 
 # target to generate assembly for a file
 imgui.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui.cpp.s
 .PHONY : imgui.cpp.s
 
 imgui_demo.o: imgui_demo.cpp.o
@@ -159,7 +159,7 @@ imgui_demo.o: imgui_demo.cpp.o
 
 # target to build an object file
 imgui_demo.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o
 .PHONY : imgui_demo.cpp.o
 
 imgui_demo.i: imgui_demo.cpp.i
@@ -167,7 +167,7 @@ imgui_demo.i: imgui_demo.cpp.i
 
 # target to preprocess a source file
 imgui_demo.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.i
 .PHONY : imgui_demo.cpp.i
 
 imgui_demo.s: imgui_demo.cpp.s
@@ -175,7 +175,7 @@ imgui_demo.s: imgui_demo.cpp.s
 
 # target to generate assembly for a file
 imgui_demo.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.s
 .PHONY : imgui_demo.cpp.s
 
 imgui_draw.o: imgui_draw.cpp.o
@@ -183,7 +183,7 @@ imgui_draw.o: imgui_draw.cpp.o
 
 # target to build an object file
 imgui_draw.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o
 .PHONY : imgui_draw.cpp.o
 
 imgui_draw.i: imgui_draw.cpp.i
@@ -191,7 +191,7 @@ imgui_draw.i: imgui_draw.cpp.i
 
 # target to preprocess a source file
 imgui_draw.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.i
 .PHONY : imgui_draw.cpp.i
 
 imgui_draw.s: imgui_draw.cpp.s
@@ -199,7 +199,7 @@ imgui_draw.s: imgui_draw.cpp.s
 
 # target to generate assembly for a file
 imgui_draw.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.s
 .PHONY : imgui_draw.cpp.s
 
 imgui_impl_opengl3.o: imgui_impl_opengl3.cpp.o
@@ -207,7 +207,7 @@ imgui_impl_opengl3.o: imgui_impl_opengl3.cpp.o
 
 # target to build an object file
 imgui_impl_opengl3.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o
 .PHONY : imgui_impl_opengl3.cpp.o
 
 imgui_impl_opengl3.i: imgui_impl_opengl3.cpp.i
@@ -215,7 +215,7 @@ imgui_impl_opengl3.i: imgui_impl_opengl3.cpp.i
 
 # target to preprocess a source file
 imgui_impl_opengl3.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.i
 .PHONY : imgui_impl_opengl3.cpp.i
 
 imgui_impl_opengl3.s: imgui_impl_opengl3.cpp.s
@@ -223,7 +223,7 @@ imgui_impl_opengl3.s: imgui_impl_opengl3.cpp.s
 
 # target to generate assembly for a file
 imgui_impl_opengl3.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.s
 .PHONY : imgui_impl_opengl3.cpp.s
 
 imgui_impl_sdl2.o: imgui_impl_sdl2.cpp.o
@@ -231,7 +231,7 @@ imgui_impl_sdl2.o: imgui_impl_sdl2.cpp.o
 
 # target to build an object file
 imgui_impl_sdl2.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_impl_sdl2.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_impl_sdl2.cpp.o
 .PHONY : imgui_impl_sdl2.cpp.o
 
 imgui_impl_sdl2.i: imgui_impl_sdl2.cpp.i
@@ -239,7 +239,7 @@ imgui_impl_sdl2.i: imgui_impl_sdl2.cpp.i
 
 # target to preprocess a source file
 imgui_impl_sdl2.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_impl_sdl2.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_impl_sdl2.cpp.i
 .PHONY : imgui_impl_sdl2.cpp.i
 
 imgui_impl_sdl2.s: imgui_impl_sdl2.cpp.s
@@ -247,7 +247,7 @@ imgui_impl_sdl2.s: imgui_impl_sdl2.cpp.s
 
 # target to generate assembly for a file
 imgui_impl_sdl2.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_impl_sdl2.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_impl_sdl2.cpp.s
 .PHONY : imgui_impl_sdl2.cpp.s
 
 imgui_tables.o: imgui_tables.cpp.o
@@ -255,7 +255,7 @@ imgui_tables.o: imgui_tables.cpp.o
 
 # target to build an object file
 imgui_tables.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_tables.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_tables.cpp.o
 .PHONY : imgui_tables.cpp.o
 
 imgui_tables.i: imgui_tables.cpp.i
@@ -263,7 +263,7 @@ imgui_tables.i: imgui_tables.cpp.i
 
 # target to preprocess a source file
 imgui_tables.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_tables.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_tables.cpp.i
 .PHONY : imgui_tables.cpp.i
 
 imgui_tables.s: imgui_tables.cpp.s
@@ -271,7 +271,7 @@ imgui_tables.s: imgui_tables.cpp.s
 
 # target to generate assembly for a file
 imgui_tables.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_tables.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_tables.cpp.s
 .PHONY : imgui_tables.cpp.s
 
 imgui_widgets.o: imgui_widgets.cpp.o
@@ -279,7 +279,7 @@ imgui_widgets.o: imgui_widgets.cpp.o
 
 # target to build an object file
 imgui_widgets.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o
 .PHONY : imgui_widgets.cpp.o
 
 imgui_widgets.i: imgui_widgets.cpp.i
@@ -287,7 +287,7 @@ imgui_widgets.i: imgui_widgets.cpp.i
 
 # target to preprocess a source file
 imgui_widgets.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.i
 .PHONY : imgui_widgets.cpp.i
 
 imgui_widgets.s: imgui_widgets.cpp.s
@@ -295,7 +295,7 @@ imgui_widgets.s: imgui_widgets.cpp.s
 
 # target to generate assembly for a file
 imgui_widgets.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.s
 .PHONY : imgui_widgets.cpp.s
 
 # Help Target
@@ -339,6 +339,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/julia/atividade2/ativ-2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/isa/Documents/pokemons/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

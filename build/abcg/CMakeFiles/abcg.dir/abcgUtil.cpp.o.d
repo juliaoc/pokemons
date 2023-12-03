@@ -1,7 +1,7 @@
 abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.o: \
- /home/julia/atividade2/ativ-2/abcg/abcgUtil.cpp \
+ /home/isa/Documents/pokemons/abcg/abcgUtil.cpp \
  /usr/include/stdc-predef.h \
- /home/julia/atividade2/ativ-2/abcg/abcgUtil.hpp \
+ /home/isa/Documents/pokemons/abcg/abcgUtil.hpp \
  /usr/include/c++/11/functional \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

@@ -1,7 +1,7 @@
 abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o: \
- /home/julia/atividade2/ativ-2/abcg/abcgTimer.cpp \
+ /home/isa/Documents/pokemons/abcg/abcgTimer.cpp \
  /usr/include/stdc-predef.h \
- /home/julia/atividade2/ativ-2/abcg/abcgTimer.hpp \
+ /home/isa/Documents/pokemons/abcg/abcgTimer.hpp \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

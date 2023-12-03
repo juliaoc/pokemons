@@ -41,7 +41,7 @@ void Window::onCreate() {
                                   .stage = abcg::ShaderStage::Fragment}});
 
 
-  loadModel(assetsPath + "pikachu.obj");
+  loadModel(assetsPath + "pokemon_PIKACHU.obj");
   m_model.setupVAO(m_program); // manter ou não?
 
   m_trackBall.setAxis(glm::normalize(glm::vec3(-1, 0.1, 0.1)));
@@ -124,7 +124,7 @@ void Window::onPaint() {
   GLint viewMatrixLoc{abcg::glGetUniformLocation(m_program, "viewMatrix")};
   GLint projMatrixLoc{abcg::glGetUniformLocation(m_program, "projMatrix")};
   GLint modelMatrixLoc{
-      abcg::glGetUniformLocation(m_program, "modelMatrix")};
+  abcg::glGetUniformLocation(m_program, "modelMatrix")};
   GLint colorLoc{abcg::glGetUniformLocation(m_program, "color")};
 
   // Set uniform variables that have the same value for every model
@@ -133,8 +133,21 @@ void Window::onPaint() {
 
     // Set uniform variables for the current model
   abcg::glUniformMatrix4fv(modelMatrixLoc, 1, GL_FALSE, &m_modelMatrix[0][0]);
-  abcg::glUniform4f(colorLoc, 1.0f, 1.0f, 0.0f, 1.0f); // Yellow
-  m_model.render(m_trianglesToDraw); // manter ou não? 
+
+  if (m_currentPokemonIndex == 0) {
+    abcg::glUniform4f(colorLoc, 1.0f, 0.843137255f, 0.0f, 1.0f); // Yellow
+  } 
+  if (m_currentPokemonIndex == 1) {
+    abcg::glUniform4f(colorLoc, 0.62745098f, 0.321568627f, 0.176470588f, 1.0f); // Brown
+  } 
+  if (m_currentPokemonIndex == 2) {
+    abcg::glUniform4f(colorLoc, 0.541176471f, 0.168627451f, 0.88627451f, 1.0f); // Purple
+  } 
+  if (m_currentPokemonIndex == 3) {
+    abcg::glUniform4f(colorLoc, 1.0f, 0.752941176f, 0.796078431f, 1.0f); // PINK
+  } 
+
+  m_model.render(m_trianglesToDraw);
 
   // Render each Pokemon
   for (const auto index : iter::range(m_numPokemon)) {
@@ -154,7 +167,6 @@ void Window::onPaint() {
     m_model.render();
   }
 
-  // abcg::glUseProgram(0); - manter ou não?
 }
 
 void Window::onPaintUI() {
@@ -169,20 +181,40 @@ void Window::onPaintUI() {
     ImGuiWindowFlags flags{ImGuiWindowFlags_NoBackground |
                            ImGuiWindowFlags_NoTitleBar |
                            ImGuiWindowFlags_NoInputs};
-    ImGui::Begin("Widget window", nullptr, flags);
+    ImGui::Begin("Inicio", nullptr, flags);
     ImGui::End();
 
   }
 
   {
+    auto const assetsPath{abcg::Application::getAssetsPath()};
     auto widgetSize{ImVec2(180, 40)};
     ImGui::SetNextWindowPos(ImVec2(m_viewportWidth - widgetSize.x - 5, m_viewportHeight - widgetSize.y - 5));
     ImGui::SetNextWindowSize(widgetSize);
     auto flags{ImGuiWindowFlags_NoDecoration};
     ImGui::Begin("Widget window", nullptr, flags);
 
-//    static std::size_t currentIndex{};
+    static std::size_t currentIndex{};
+
     ImGui::PushItemWidth(120);
+    if (ImGui::BeginCombo("Pokemon", m_pokemonNames.at(currentIndex))) {
+      for (auto index : iter::range(m_pokemonNames.size())) {
+        const bool isSelected{currentIndex == index};
+        if (ImGui::Selectable(m_pokemonNames.at(index), isSelected))
+          currentIndex = index;
+        if (isSelected) ImGui::SetItemDefaultFocus();
+      }
+      ImGui::EndCombo();
+    }
+    ImGui::PopItemWidth();
+
+    if (static_cast<int>(currentIndex) != m_currentPokemonIndex) {
+      m_currentPokemonIndex = currentIndex;
+
+      m_model.loadFromFile(fmt::format("{}pokemon_{}.obj", assetsPath, m_pokemonNames.at(m_currentPokemonIndex)));
+      m_model.setupVAO(m_program);
+      m_trianglesToDraw = m_model.getNumTriangles();
+    }
     ImGui::End();
     
 }

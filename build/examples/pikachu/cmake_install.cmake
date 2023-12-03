@@ -1,4 +1,4 @@
-# Install script for directory: /home/julia/atividade2/ativ-2/examples/pikachu
+# Install script for directory: /home/isa/Documents/pokemons/examples/pikachu
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

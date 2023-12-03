@@ -8,24 +8,24 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/julia/atividade2/ativ-2/abcg/abcgApplication.cpp" "abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o.d"
-  "/home/julia/atividade2/ativ-2/abcg/abcgException.cpp" "abcg/CMakeFiles/abcg.dir/abcgException.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgException.cpp.o.d"
-  "/home/julia/atividade2/ativ-2/abcg/abcgImage.cpp" "abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o.d"
-  "/home/julia/atividade2/ativ-2/abcg/abcgOpenGLError.cpp" "abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o.d"
-  "/home/julia/atividade2/ativ-2/abcg/abcgOpenGLFunction.cpp" "abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o.d"
-  "/home/julia/atividade2/ativ-2/abcg/abcgOpenGLImage.cpp" "abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o.d"
-  "/home/julia/atividade2/ativ-2/abcg/abcgOpenGLShader.cpp" "abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o.d"
-  "/home/julia/atividade2/ativ-2/abcg/abcgOpenGLWindow.cpp" "abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o.d"
-  "/home/julia/atividade2/ativ-2/abcg/abcgTimer.cpp" "abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o.d"
-  "/home/julia/atividade2/ativ-2/abcg/abcgTrackball.cpp" "abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o.d"
-  "/home/julia/atividade2/ativ-2/abcg/abcgUtil.cpp" "abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.o.d"
-  "/home/julia/atividade2/ativ-2/abcg/abcgWindow.cpp" "abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o.d"
+  "/home/isa/Documents/pokemons/abcg/abcgApplication.cpp" "abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o.d"
+  "/home/isa/Documents/pokemons/abcg/abcgException.cpp" "abcg/CMakeFiles/abcg.dir/abcgException.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgException.cpp.o.d"
+  "/home/isa/Documents/pokemons/abcg/abcgImage.cpp" "abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o.d"
+  "/home/isa/Documents/pokemons/abcg/abcgOpenGLError.cpp" "abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o.d"
+  "/home/isa/Documents/pokemons/abcg/abcgOpenGLFunction.cpp" "abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o.d"
+  "/home/isa/Documents/pokemons/abcg/abcgOpenGLImage.cpp" "abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o.d"
+  "/home/isa/Documents/pokemons/abcg/abcgOpenGLShader.cpp" "abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o.d"
+  "/home/isa/Documents/pokemons/abcg/abcgOpenGLWindow.cpp" "abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o.d"
+  "/home/isa/Documents/pokemons/abcg/abcgTimer.cpp" "abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o.d"
+  "/home/isa/Documents/pokemons/abcg/abcgTrackball.cpp" "abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o.d"
+  "/home/isa/Documents/pokemons/abcg/abcgUtil.cpp" "abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.o.d"
+  "/home/isa/Documents/pokemons/abcg/abcgWindow.cpp" "abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o" "gcc" "abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/julia/atividade2/ativ-2/build/abcg/external/fmt/CMakeFiles/fmt.dir/DependInfo.cmake"
-  "/home/julia/atividade2/ativ-2/build/abcg/external/imgui/CMakeFiles/imgui.dir/DependInfo.cmake"
+  "/home/isa/Documents/pokemons/build/abcg/external/fmt/CMakeFiles/fmt.dir/DependInfo.cmake"
+  "/home/isa/Documents/pokemons/build/abcg/external/imgui/CMakeFiles/imgui.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

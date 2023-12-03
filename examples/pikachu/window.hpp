@@ -48,6 +48,9 @@ private:
 
    float m_angle{};
   GLuint m_program{};
+  const std::vector<const char *> m_pokemonNames{"PIKACHU", "EEVEE", "EKANS", "JIGGLYPUFF"};
+  int m_currentPokemonIndex{0};
+
   void loadModel(std::string_view path);
 
 };

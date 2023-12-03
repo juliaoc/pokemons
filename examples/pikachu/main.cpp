@@ -1,3 +1,5 @@
+#include <fmt/core.h>
+#include "abcg.hpp"
 #include "window.hpp"
 
 int main(int argc, char **argv) {
@@ -9,7 +11,7 @@ int main(int argc, char **argv) {
     window.setWindowSettings({
         .width = 600,
         .height = 600,
-        .title = "Starfield Effect",
+        .title = "POKEMON",
     });
 
     app.run(window);

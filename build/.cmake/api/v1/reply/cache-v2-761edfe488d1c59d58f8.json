@@ -11,7 +11,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/ccache"
+			"value" : "CCACHE-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -67,7 +67,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/julia/atividade2/ativ-2/build"
+			"value" : "/home/isa/Documents/pokemons/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -171,7 +171,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/usr/lib/ccache/g++"
+			"value" : "/usr/bin/g++"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -299,7 +299,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/usr/lib/ccache/gcc"
+			"value" : "/usr/bin/gcc"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -627,7 +627,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/julia/atividade2/ativ-2"
+			"value" : "/home/isa/Documents/pokemons"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1647,7 +1647,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/atividade2/ativ-2/build/abcg"
+			"value" : "/home/isa/Documents/pokemons/build/abcg"
 		},
 		{
 			"name" : "abcg_IS_TOP_LEVEL",
@@ -1671,7 +1671,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/atividade2/ativ-2/abcg"
+			"value" : "/home/isa/Documents/pokemons/abcg"
 		},
 		{
 			"name" : "cppitertools_BINARY_DIR",
@@ -1683,7 +1683,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/atividade2/ativ-2/build/abcg/external/cppitertools"
+			"value" : "/home/isa/Documents/pokemons/build/abcg/external/cppitertools"
 		},
 		{
 			"name" : "cppitertools_IS_TOP_LEVEL",
@@ -1707,7 +1707,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/atividade2/ativ-2/abcg/external/cppitertools"
+			"value" : "/home/isa/Documents/pokemons/abcg/external/cppitertools"
 		},
 		{
 			"name" : "external_BINARY_DIR",
@@ -1719,7 +1719,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/atividade2/ativ-2/build/abcg/external"
+			"value" : "/home/isa/Documents/pokemons/build/abcg/external"
 		},
 		{
 			"name" : "external_IS_TOP_LEVEL",
@@ -1743,7 +1743,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/atividade2/ativ-2/abcg/external"
+			"value" : "/home/isa/Documents/pokemons/abcg/external"
 		},
 		{
 			"name" : "fmt_BINARY_DIR",
@@ -1755,7 +1755,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/atividade2/ativ-2/build/abcg/external/fmt"
+			"value" : "/home/isa/Documents/pokemons/build/abcg/external/fmt"
 		},
 		{
 			"name" : "fmt_IS_TOP_LEVEL",
@@ -1779,7 +1779,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/atividade2/ativ-2/abcg/external/fmt"
+			"value" : "/home/isa/Documents/pokemons/abcg/external/fmt"
 		},
 		{
 			"name" : "gsl_BINARY_DIR",
@@ -1791,7 +1791,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/atividade2/ativ-2/build/abcg/external/gsl"
+			"value" : "/home/isa/Documents/pokemons/build/abcg/external/gsl"
 		},
 		{
 			"name" : "gsl_IS_TOP_LEVEL",
@@ -1815,7 +1815,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/atividade2/ativ-2/abcg/external/gsl"
+			"value" : "/home/isa/Documents/pokemons/abcg/external/gsl"
 		},
 		{
 			"name" : "imgui_BINARY_DIR",
@@ -1827,7 +1827,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/atividade2/ativ-2/build/abcg/external/imgui"
+			"value" : "/home/isa/Documents/pokemons/build/abcg/external/imgui"
 		},
 		{
 			"name" : "imgui_IS_TOP_LEVEL",
@@ -1851,7 +1851,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/atividade2/ativ-2/abcg/external/imgui"
+			"value" : "/home/isa/Documents/pokemons/abcg/external/imgui"
 		},
 		{
 			"name" : "pikachu_BINARY_DIR",
@@ -1863,7 +1863,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/atividade2/ativ-2/build/examples/pikachu"
+			"value" : "/home/isa/Documents/pokemons/build/examples/pikachu"
 		},
 		{
 			"name" : "pikachu_IS_TOP_LEVEL",
@@ -1887,7 +1887,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/atividade2/ativ-2/examples/pikachu"
+			"value" : "/home/isa/Documents/pokemons/examples/pikachu"
 		},
 		{
 			"name" : "tiny_obj_loader_BINARY_DIR",
@@ -1899,7 +1899,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/atividade2/ativ-2/build/abcg/external/tiny_obj_loader"
+			"value" : "/home/isa/Documents/pokemons/build/abcg/external/tiny_obj_loader"
 		},
 		{
 			"name" : "tiny_obj_loader_IS_TOP_LEVEL",
@@ -1923,7 +1923,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader"
+			"value" : "/home/isa/Documents/pokemons/abcg/external/tiny_obj_loader"
 		}
 	],
 	"kind" : "cache",

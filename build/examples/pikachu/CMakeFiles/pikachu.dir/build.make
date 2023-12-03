@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/julia/atividade2/ativ-2
+CMAKE_SOURCE_DIR = /home/isa/Documents/pokemons
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/julia/atividade2/ativ-2/build
+CMAKE_BINARY_DIR = /home/isa/Documents/pokemons/build
 
 # Include any dependencies generated for this target.
 include examples/pikachu/CMakeFiles/pikachu.dir/depend.make
@@ -72,58 +72,58 @@ include examples/pikachu/CMakeFiles/pikachu.dir/flags.make
 examples/pikachu/CMakeFiles/pikachu.dir/main.cpp.o: examples/pikachu/CMakeFiles/pikachu.dir/flags.make
 examples/pikachu/CMakeFiles/pikachu.dir/main.cpp.o: ../examples/pikachu/main.cpp
 examples/pikachu/CMakeFiles/pikachu.dir/main.cpp.o: examples/pikachu/CMakeFiles/pikachu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/julia/atividade2/ativ-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/pikachu/CMakeFiles/pikachu.dir/main.cpp.o"
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/bin/ccache /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/pikachu/CMakeFiles/pikachu.dir/main.cpp.o -MF CMakeFiles/pikachu.dir/main.cpp.o.d -o CMakeFiles/pikachu.dir/main.cpp.o -c /home/julia/atividade2/ativ-2/examples/pikachu/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isa/Documents/pokemons/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/pikachu/CMakeFiles/pikachu.dir/main.cpp.o"
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/pikachu/CMakeFiles/pikachu.dir/main.cpp.o -MF CMakeFiles/pikachu.dir/main.cpp.o.d -o CMakeFiles/pikachu.dir/main.cpp.o -c /home/isa/Documents/pokemons/examples/pikachu/main.cpp
 
 examples/pikachu/CMakeFiles/pikachu.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pikachu.dir/main.cpp.i"
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julia/atividade2/ativ-2/examples/pikachu/main.cpp > CMakeFiles/pikachu.dir/main.cpp.i
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isa/Documents/pokemons/examples/pikachu/main.cpp > CMakeFiles/pikachu.dir/main.cpp.i
 
 examples/pikachu/CMakeFiles/pikachu.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pikachu.dir/main.cpp.s"
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julia/atividade2/ativ-2/examples/pikachu/main.cpp -o CMakeFiles/pikachu.dir/main.cpp.s
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isa/Documents/pokemons/examples/pikachu/main.cpp -o CMakeFiles/pikachu.dir/main.cpp.s
 
 examples/pikachu/CMakeFiles/pikachu.dir/model.cpp.o: examples/pikachu/CMakeFiles/pikachu.dir/flags.make
 examples/pikachu/CMakeFiles/pikachu.dir/model.cpp.o: ../examples/pikachu/model.cpp
 examples/pikachu/CMakeFiles/pikachu.dir/model.cpp.o: examples/pikachu/CMakeFiles/pikachu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/julia/atividade2/ativ-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/pikachu/CMakeFiles/pikachu.dir/model.cpp.o"
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/bin/ccache /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/pikachu/CMakeFiles/pikachu.dir/model.cpp.o -MF CMakeFiles/pikachu.dir/model.cpp.o.d -o CMakeFiles/pikachu.dir/model.cpp.o -c /home/julia/atividade2/ativ-2/examples/pikachu/model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isa/Documents/pokemons/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/pikachu/CMakeFiles/pikachu.dir/model.cpp.o"
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/pikachu/CMakeFiles/pikachu.dir/model.cpp.o -MF CMakeFiles/pikachu.dir/model.cpp.o.d -o CMakeFiles/pikachu.dir/model.cpp.o -c /home/isa/Documents/pokemons/examples/pikachu/model.cpp
 
 examples/pikachu/CMakeFiles/pikachu.dir/model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pikachu.dir/model.cpp.i"
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julia/atividade2/ativ-2/examples/pikachu/model.cpp > CMakeFiles/pikachu.dir/model.cpp.i
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isa/Documents/pokemons/examples/pikachu/model.cpp > CMakeFiles/pikachu.dir/model.cpp.i
 
 examples/pikachu/CMakeFiles/pikachu.dir/model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pikachu.dir/model.cpp.s"
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julia/atividade2/ativ-2/examples/pikachu/model.cpp -o CMakeFiles/pikachu.dir/model.cpp.s
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isa/Documents/pokemons/examples/pikachu/model.cpp -o CMakeFiles/pikachu.dir/model.cpp.s
 
 examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.o: examples/pikachu/CMakeFiles/pikachu.dir/flags.make
 examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.o: ../examples/pikachu/window.cpp
 examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.o: examples/pikachu/CMakeFiles/pikachu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/julia/atividade2/ativ-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.o"
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/bin/ccache /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.o -MF CMakeFiles/pikachu.dir/window.cpp.o.d -o CMakeFiles/pikachu.dir/window.cpp.o -c /home/julia/atividade2/ativ-2/examples/pikachu/window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isa/Documents/pokemons/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.o"
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.o -MF CMakeFiles/pikachu.dir/window.cpp.o.d -o CMakeFiles/pikachu.dir/window.cpp.o -c /home/isa/Documents/pokemons/examples/pikachu/window.cpp
 
 examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pikachu.dir/window.cpp.i"
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julia/atividade2/ativ-2/examples/pikachu/window.cpp > CMakeFiles/pikachu.dir/window.cpp.i
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isa/Documents/pokemons/examples/pikachu/window.cpp > CMakeFiles/pikachu.dir/window.cpp.i
 
 examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pikachu.dir/window.cpp.s"
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julia/atividade2/ativ-2/examples/pikachu/window.cpp -o CMakeFiles/pikachu.dir/window.cpp.s
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isa/Documents/pokemons/examples/pikachu/window.cpp -o CMakeFiles/pikachu.dir/window.cpp.s
 
 examples/pikachu/CMakeFiles/pikachu.dir/trackball.cpp.o: examples/pikachu/CMakeFiles/pikachu.dir/flags.make
 examples/pikachu/CMakeFiles/pikachu.dir/trackball.cpp.o: ../examples/pikachu/trackball.cpp
 examples/pikachu/CMakeFiles/pikachu.dir/trackball.cpp.o: examples/pikachu/CMakeFiles/pikachu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/julia/atividade2/ativ-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object examples/pikachu/CMakeFiles/pikachu.dir/trackball.cpp.o"
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/bin/ccache /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/pikachu/CMakeFiles/pikachu.dir/trackball.cpp.o -MF CMakeFiles/pikachu.dir/trackball.cpp.o.d -o CMakeFiles/pikachu.dir/trackball.cpp.o -c /home/julia/atividade2/ativ-2/examples/pikachu/trackball.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isa/Documents/pokemons/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object examples/pikachu/CMakeFiles/pikachu.dir/trackball.cpp.o"
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/pikachu/CMakeFiles/pikachu.dir/trackball.cpp.o -MF CMakeFiles/pikachu.dir/trackball.cpp.o.d -o CMakeFiles/pikachu.dir/trackball.cpp.o -c /home/isa/Documents/pokemons/examples/pikachu/trackball.cpp
 
 examples/pikachu/CMakeFiles/pikachu.dir/trackball.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pikachu.dir/trackball.cpp.i"
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julia/atividade2/ativ-2/examples/pikachu/trackball.cpp > CMakeFiles/pikachu.dir/trackball.cpp.i
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isa/Documents/pokemons/examples/pikachu/trackball.cpp > CMakeFiles/pikachu.dir/trackball.cpp.i
 
 examples/pikachu/CMakeFiles/pikachu.dir/trackball.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pikachu.dir/trackball.cpp.s"
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julia/atividade2/ativ-2/examples/pikachu/trackball.cpp -o CMakeFiles/pikachu.dir/trackball.cpp.s
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isa/Documents/pokemons/examples/pikachu/trackball.cpp -o CMakeFiles/pikachu.dir/trackball.cpp.s
 
 # Object files for target pikachu
 pikachu_OBJECTS = \
@@ -150,25 +150,25 @@ bin/pikachu: /usr/lib/x86_64-linux-gnu/libSDL2main.a
 bin/pikachu: /usr/lib/x86_64-linux-gnu/libSDL2.so
 bin/pikachu: /usr/lib/x86_64-linux-gnu/libSDL2_image.so
 bin/pikachu: examples/pikachu/CMakeFiles/pikachu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/julia/atividade2/ativ-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../../bin/pikachu"
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/bin/cmake -E remove_directory /home/julia/atividade2/ativ-2/build/bin/pikachu
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pikachu.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/bin/cmake -E make_directory /home/julia/atividade2/ativ-2/build/bin/pikachu.dir
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/bin/cmake -E copy_directory /home/julia/atividade2/ativ-2/examples/pikachu/assets /home/julia/atividade2/ativ-2/build/bin/pikachu.dir/assets
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/bin/cmake -E copy /home/julia/atividade2/ativ-2/build/bin/pikachu /home/julia/atividade2/ativ-2/build/bin/pikachu.dir/pikachu
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/bin/cmake -E remove /home/julia/atividade2/ativ-2/build/bin/pikachu
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/bin/cmake -E rename /home/julia/atividade2/ativ-2/build/bin/pikachu.dir /home/julia/atividade2/ativ-2/build/bin/pikachu
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && /usr/bin/cmake -E rm -rf /home/julia/atividade2/ativ-2/build/bin/pikachu.dir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/isa/Documents/pokemons/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../../bin/pikachu"
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/cmake -E remove_directory /home/isa/Documents/pokemons/build/bin/pikachu
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pikachu.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/cmake -E make_directory /home/isa/Documents/pokemons/build/bin/pikachu.dir
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/cmake -E copy_directory /home/isa/Documents/pokemons/examples/pikachu/assets /home/isa/Documents/pokemons/build/bin/pikachu.dir/assets
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/cmake -E copy /home/isa/Documents/pokemons/build/bin/pikachu /home/isa/Documents/pokemons/build/bin/pikachu.dir/pikachu
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/cmake -E remove /home/isa/Documents/pokemons/build/bin/pikachu
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/cmake -E rename /home/isa/Documents/pokemons/build/bin/pikachu.dir /home/isa/Documents/pokemons/build/bin/pikachu
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && /usr/bin/cmake -E rm -rf /home/isa/Documents/pokemons/build/bin/pikachu.dir
 
 # Rule to build all files generated by this target.
 examples/pikachu/CMakeFiles/pikachu.dir/build: bin/pikachu
 .PHONY : examples/pikachu/CMakeFiles/pikachu.dir/build
 
 examples/pikachu/CMakeFiles/pikachu.dir/clean:
-	cd /home/julia/atividade2/ativ-2/build/examples/pikachu && $(CMAKE_COMMAND) -P CMakeFiles/pikachu.dir/cmake_clean.cmake
+	cd /home/isa/Documents/pokemons/build/examples/pikachu && $(CMAKE_COMMAND) -P CMakeFiles/pikachu.dir/cmake_clean.cmake
 .PHONY : examples/pikachu/CMakeFiles/pikachu.dir/clean
 
 examples/pikachu/CMakeFiles/pikachu.dir/depend:
-	cd /home/julia/atividade2/ativ-2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/julia/atividade2/ativ-2 /home/julia/atividade2/ativ-2/examples/pikachu /home/julia/atividade2/ativ-2/build /home/julia/atividade2/ativ-2/build/examples/pikachu /home/julia/atividade2/ativ-2/build/examples/pikachu/CMakeFiles/pikachu.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/isa/Documents/pokemons/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/isa/Documents/pokemons /home/isa/Documents/pokemons/examples/pikachu /home/isa/Documents/pokemons/build /home/isa/Documents/pokemons/build/examples/pikachu /home/isa/Documents/pokemons/build/examples/pikachu/CMakeFiles/pikachu.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/pikachu/CMakeFiles/pikachu.dir/depend
 

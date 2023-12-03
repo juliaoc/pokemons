@@ -1,4 +1,4 @@
-# Install script for directory: /home/julia/atividade2/ativ-2/abcg/external/fmt
+# Install script for directory: /home/isa/Documents/pokemons/abcg/external/fmt
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

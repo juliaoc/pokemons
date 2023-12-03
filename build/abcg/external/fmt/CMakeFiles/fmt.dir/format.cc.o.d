@@ -1,7 +1,7 @@
 abcg/external/fmt/CMakeFiles/fmt.dir/format.cc.o: \
- /home/julia/atividade2/ativ-2/abcg/external/fmt/format.cc \
+ /home/isa/Documents/pokemons/abcg/external/fmt/format.cc \
  /usr/include/stdc-predef.h \
- /home/julia/atividade2/ativ-2/abcg/external/fmt/format-inl.h \
+ /home/isa/Documents/pokemons/abcg/external/fmt/format-inl.h \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -217,7 +217,7 @@ abcg/external/fmt/CMakeFiles/fmt.dir/format.cc.o: \
  /usr/include/c++/11/ios /usr/include/c++/11/bits/basic_ios.h \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc \
- /home/julia/atividade2/ativ-2/abcg/external/fmt/format.h \
+ /home/isa/Documents/pokemons/abcg/external/fmt/format.h \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
@@ -246,5 +246,5 @@ abcg/external/fmt/CMakeFiles/fmt.dir/format.cc.o: \
  /usr/include/c++/11/bits/ranges_uninitialized.h \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /home/julia/atividade2/ativ-2/abcg/external/fmt/core.h \
+ /home/isa/Documents/pokemons/abcg/external/fmt/core.h \
  /usr/include/c++/11/cstddef

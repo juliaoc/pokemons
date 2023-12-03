@@ -1,7 +1,7 @@
 abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o: \
- /home/julia/atividade2/ativ-2/abcg/abcgImage.cpp \
+ /home/isa/Documents/pokemons/abcg/abcgImage.cpp \
  /usr/include/stdc-predef.h \
- /home/julia/atividade2/ativ-2/abcg/abcgImage.hpp \
+ /home/isa/Documents/pokemons/abcg/abcgImage.hpp \
  /usr/include/SDL2/SDL_image.h /usr/include/SDL2/SDL.h \
  /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
  /usr/include/SDL2/SDL_config.h \
@@ -221,9 +221,9 @@ abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o: \
  /usr/include/SDL2/SDL_shape.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/itertools.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/accumulate.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/itertools.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/accumulate.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/stl_function.h \
  /usr/include/c++/11/backward/binders.h /usr/include/c++/11/tuple \
@@ -258,7 +258,7 @@ abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/variant \
  /usr/include/c++/11/bits/parse_numbers.h \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/internal/iterbase.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/internal/iterbase.hpp \
  /usr/include/c++/11/cstddef /usr/include/c++/11/iterator \
  /usr/include/c++/11/iosfwd /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
@@ -308,9 +308,9 @@ abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o: \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
  /usr/include/c++/11/bits/nested_exception.h \
  /usr/include/c++/11/bits/streambuf.tcc /usr/include/c++/11/optional \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/internal/iterbase.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/batched.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/internal/iteratoriterator.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/internal/iterbase.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/batched.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/internal/iteratoriterator.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/bits/ranges_algo.h \
  /usr/include/c++/11/bits/ranges_algobase.h \
  /usr/include/c++/11/bits/ranges_util.h \
@@ -359,49 +359,49 @@ abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o: \
  /usr/include/c++/11/bits/ranges_uninitialized.h \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/chain.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/internal/iter_tuples.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/chunked.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/combinations.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/combinations_with_replacement.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/compress.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/count.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/range.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/cycle.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/dropwhile.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/filter.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/enumerate.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/filterfalse.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/groupby.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/imap.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/starmap.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/zip.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/permutations.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/powerset.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/product.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/repeat.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/reversed.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/slice.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/sliding_window.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/chain.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/internal/iter_tuples.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/chunked.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/combinations.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/combinations_with_replacement.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/compress.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/count.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/range.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/cycle.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/dropwhile.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/filter.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/enumerate.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/filterfalse.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/groupby.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/imap.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/starmap.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/zip.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/permutations.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/powerset.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/product.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/repeat.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/reversed.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/slice.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/sliding_window.hpp \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/sorted.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/takewhile.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/unique_everseen.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/sorted.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/takewhile.hpp \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/unique_everseen.hpp \
  /usr/include/c++/11/unordered_set \
  /usr/include/c++/11/bits/unordered_set.h \
- /home/julia/atividade2/ativ-2/abcg/external/cppitertools/unique_justseen.hpp \
- /home/julia/atividade2/ativ-2/abcg/external/gsl/gsl \
- /home/julia/atividade2/ativ-2/abcg/external/gsl/gsl_algorithm \
- /home/julia/atividade2/ativ-2/abcg/external/gsl/gsl_assert \
- /home/julia/atividade2/ativ-2/abcg/external/gsl/span \
- /home/julia/atividade2/ativ-2/abcg/external/gsl/gsl_byte \
- /home/julia/atividade2/ativ-2/abcg/external/gsl/gsl_util \
- /home/julia/atividade2/ativ-2/abcg/external/gsl/multi_span \
+ /home/isa/Documents/pokemons/abcg/external/cppitertools/unique_justseen.hpp \
+ /home/isa/Documents/pokemons/abcg/external/gsl/gsl \
+ /home/isa/Documents/pokemons/abcg/external/gsl/gsl_algorithm \
+ /home/isa/Documents/pokemons/abcg/external/gsl/gsl_assert \
+ /home/isa/Documents/pokemons/abcg/external/gsl/span \
+ /home/isa/Documents/pokemons/abcg/external/gsl/gsl_byte \
+ /home/isa/Documents/pokemons/abcg/external/gsl/gsl_util \
+ /home/isa/Documents/pokemons/abcg/external/gsl/multi_span \
  /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
- /home/julia/atividade2/ativ-2/abcg/external/gsl/pointers \
- /home/julia/atividade2/ativ-2/abcg/external/gsl/string_span \
- /home/julia/atividade2/ativ-2/abcg/external/gsl/span_ext \
+ /home/isa/Documents/pokemons/abcg/external/gsl/pointers \
+ /home/isa/Documents/pokemons/abcg/external/gsl/string_span \
+ /home/isa/Documents/pokemons/abcg/external/gsl/span_ext \
  /usr/include/c++/11/cstring /usr/include/c++/11/span

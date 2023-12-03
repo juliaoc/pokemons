@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/julia/atividade2/ativ-2
+CMAKE_SOURCE_DIR = /home/isa/Documents/pokemons
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/julia/atividade2/ativ-2/build
+CMAKE_BINARY_DIR = /home/isa/Documents/pokemons/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/julia/atividade2/ativ-2/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/julia/atividade2/ativ-2/build/CMakeFiles /home/julia/atividade2/ativ-2/build/abcg//CMakeFiles/progress.marks
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/julia/atividade2/ativ-2/build/CMakeFiles 0
+	cd /home/isa/Documents/pokemons/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/isa/Documents/pokemons/build/CMakeFiles /home/isa/Documents/pokemons/build/abcg//CMakeFiles/progress.marks
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isa/Documents/pokemons/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/clean
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/preinstall
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/preinstall
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/julia/atividade2/ativ-2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/isa/Documents/pokemons/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 abcg/CMakeFiles/abcg.dir/rule:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/CMakeFiles/abcg.dir/rule
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abcg/CMakeFiles/abcg.dir/rule
 .PHONY : abcg/CMakeFiles/abcg.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ abcg: abcg/CMakeFiles/abcg.dir/rule
 
 # fast build rule for target.
 abcg/fast:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/build
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/build
 .PHONY : abcg/fast
 
 abcgApplication.o: abcgApplication.cpp.o
@@ -135,7 +135,7 @@ abcgApplication.o: abcgApplication.cpp.o
 
 # target to build an object file
 abcgApplication.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o
 .PHONY : abcgApplication.cpp.o
 
 abcgApplication.i: abcgApplication.cpp.i
@@ -143,7 +143,7 @@ abcgApplication.i: abcgApplication.cpp.i
 
 # target to preprocess a source file
 abcgApplication.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.i
 .PHONY : abcgApplication.cpp.i
 
 abcgApplication.s: abcgApplication.cpp.s
@@ -151,7 +151,7 @@ abcgApplication.s: abcgApplication.cpp.s
 
 # target to generate assembly for a file
 abcgApplication.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.s
 .PHONY : abcgApplication.cpp.s
 
 abcgException.o: abcgException.cpp.o
@@ -159,7 +159,7 @@ abcgException.o: abcgException.cpp.o
 
 # target to build an object file
 abcgException.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgException.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgException.cpp.o
 .PHONY : abcgException.cpp.o
 
 abcgException.i: abcgException.cpp.i
@@ -167,7 +167,7 @@ abcgException.i: abcgException.cpp.i
 
 # target to preprocess a source file
 abcgException.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgException.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgException.cpp.i
 .PHONY : abcgException.cpp.i
 
 abcgException.s: abcgException.cpp.s
@@ -175,7 +175,7 @@ abcgException.s: abcgException.cpp.s
 
 # target to generate assembly for a file
 abcgException.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgException.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgException.cpp.s
 .PHONY : abcgException.cpp.s
 
 abcgImage.o: abcgImage.cpp.o
@@ -183,7 +183,7 @@ abcgImage.o: abcgImage.cpp.o
 
 # target to build an object file
 abcgImage.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o
 .PHONY : abcgImage.cpp.o
 
 abcgImage.i: abcgImage.cpp.i
@@ -191,7 +191,7 @@ abcgImage.i: abcgImage.cpp.i
 
 # target to preprocess a source file
 abcgImage.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgImage.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgImage.cpp.i
 .PHONY : abcgImage.cpp.i
 
 abcgImage.s: abcgImage.cpp.s
@@ -199,7 +199,7 @@ abcgImage.s: abcgImage.cpp.s
 
 # target to generate assembly for a file
 abcgImage.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgImage.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgImage.cpp.s
 .PHONY : abcgImage.cpp.s
 
 abcgOpenGLError.o: abcgOpenGLError.cpp.o
@@ -207,7 +207,7 @@ abcgOpenGLError.o: abcgOpenGLError.cpp.o
 
 # target to build an object file
 abcgOpenGLError.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o
 .PHONY : abcgOpenGLError.cpp.o
 
 abcgOpenGLError.i: abcgOpenGLError.cpp.i
@@ -215,7 +215,7 @@ abcgOpenGLError.i: abcgOpenGLError.cpp.i
 
 # target to preprocess a source file
 abcgOpenGLError.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.i
 .PHONY : abcgOpenGLError.cpp.i
 
 abcgOpenGLError.s: abcgOpenGLError.cpp.s
@@ -223,7 +223,7 @@ abcgOpenGLError.s: abcgOpenGLError.cpp.s
 
 # target to generate assembly for a file
 abcgOpenGLError.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.s
 .PHONY : abcgOpenGLError.cpp.s
 
 abcgOpenGLFunction.o: abcgOpenGLFunction.cpp.o
@@ -231,7 +231,7 @@ abcgOpenGLFunction.o: abcgOpenGLFunction.cpp.o
 
 # target to build an object file
 abcgOpenGLFunction.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o
 .PHONY : abcgOpenGLFunction.cpp.o
 
 abcgOpenGLFunction.i: abcgOpenGLFunction.cpp.i
@@ -239,7 +239,7 @@ abcgOpenGLFunction.i: abcgOpenGLFunction.cpp.i
 
 # target to preprocess a source file
 abcgOpenGLFunction.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.i
 .PHONY : abcgOpenGLFunction.cpp.i
 
 abcgOpenGLFunction.s: abcgOpenGLFunction.cpp.s
@@ -247,7 +247,7 @@ abcgOpenGLFunction.s: abcgOpenGLFunction.cpp.s
 
 # target to generate assembly for a file
 abcgOpenGLFunction.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.s
 .PHONY : abcgOpenGLFunction.cpp.s
 
 abcgOpenGLImage.o: abcgOpenGLImage.cpp.o
@@ -255,7 +255,7 @@ abcgOpenGLImage.o: abcgOpenGLImage.cpp.o
 
 # target to build an object file
 abcgOpenGLImage.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o
 .PHONY : abcgOpenGLImage.cpp.o
 
 abcgOpenGLImage.i: abcgOpenGLImage.cpp.i
@@ -263,7 +263,7 @@ abcgOpenGLImage.i: abcgOpenGLImage.cpp.i
 
 # target to preprocess a source file
 abcgOpenGLImage.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.i
 .PHONY : abcgOpenGLImage.cpp.i
 
 abcgOpenGLImage.s: abcgOpenGLImage.cpp.s
@@ -271,7 +271,7 @@ abcgOpenGLImage.s: abcgOpenGLImage.cpp.s
 
 # target to generate assembly for a file
 abcgOpenGLImage.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.s
 .PHONY : abcgOpenGLImage.cpp.s
 
 abcgOpenGLShader.o: abcgOpenGLShader.cpp.o
@@ -279,7 +279,7 @@ abcgOpenGLShader.o: abcgOpenGLShader.cpp.o
 
 # target to build an object file
 abcgOpenGLShader.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o
 .PHONY : abcgOpenGLShader.cpp.o
 
 abcgOpenGLShader.i: abcgOpenGLShader.cpp.i
@@ -287,7 +287,7 @@ abcgOpenGLShader.i: abcgOpenGLShader.cpp.i
 
 # target to preprocess a source file
 abcgOpenGLShader.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.i
 .PHONY : abcgOpenGLShader.cpp.i
 
 abcgOpenGLShader.s: abcgOpenGLShader.cpp.s
@@ -295,7 +295,7 @@ abcgOpenGLShader.s: abcgOpenGLShader.cpp.s
 
 # target to generate assembly for a file
 abcgOpenGLShader.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.s
 .PHONY : abcgOpenGLShader.cpp.s
 
 abcgOpenGLWindow.o: abcgOpenGLWindow.cpp.o
@@ -303,7 +303,7 @@ abcgOpenGLWindow.o: abcgOpenGLWindow.cpp.o
 
 # target to build an object file
 abcgOpenGLWindow.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o
 .PHONY : abcgOpenGLWindow.cpp.o
 
 abcgOpenGLWindow.i: abcgOpenGLWindow.cpp.i
@@ -311,7 +311,7 @@ abcgOpenGLWindow.i: abcgOpenGLWindow.cpp.i
 
 # target to preprocess a source file
 abcgOpenGLWindow.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.i
 .PHONY : abcgOpenGLWindow.cpp.i
 
 abcgOpenGLWindow.s: abcgOpenGLWindow.cpp.s
@@ -319,7 +319,7 @@ abcgOpenGLWindow.s: abcgOpenGLWindow.cpp.s
 
 # target to generate assembly for a file
 abcgOpenGLWindow.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.s
 .PHONY : abcgOpenGLWindow.cpp.s
 
 abcgTimer.o: abcgTimer.cpp.o
@@ -327,7 +327,7 @@ abcgTimer.o: abcgTimer.cpp.o
 
 # target to build an object file
 abcgTimer.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o
 .PHONY : abcgTimer.cpp.o
 
 abcgTimer.i: abcgTimer.cpp.i
@@ -335,7 +335,7 @@ abcgTimer.i: abcgTimer.cpp.i
 
 # target to preprocess a source file
 abcgTimer.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.i
 .PHONY : abcgTimer.cpp.i
 
 abcgTimer.s: abcgTimer.cpp.s
@@ -343,7 +343,7 @@ abcgTimer.s: abcgTimer.cpp.s
 
 # target to generate assembly for a file
 abcgTimer.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.s
 .PHONY : abcgTimer.cpp.s
 
 abcgTrackball.o: abcgTrackball.cpp.o
@@ -351,7 +351,7 @@ abcgTrackball.o: abcgTrackball.cpp.o
 
 # target to build an object file
 abcgTrackball.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o
 .PHONY : abcgTrackball.cpp.o
 
 abcgTrackball.i: abcgTrackball.cpp.i
@@ -359,7 +359,7 @@ abcgTrackball.i: abcgTrackball.cpp.i
 
 # target to preprocess a source file
 abcgTrackball.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.i
 .PHONY : abcgTrackball.cpp.i
 
 abcgTrackball.s: abcgTrackball.cpp.s
@@ -367,7 +367,7 @@ abcgTrackball.s: abcgTrackball.cpp.s
 
 # target to generate assembly for a file
 abcgTrackball.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.s
 .PHONY : abcgTrackball.cpp.s
 
 abcgUtil.o: abcgUtil.cpp.o
@@ -375,7 +375,7 @@ abcgUtil.o: abcgUtil.cpp.o
 
 # target to build an object file
 abcgUtil.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.o
 .PHONY : abcgUtil.cpp.o
 
 abcgUtil.i: abcgUtil.cpp.i
@@ -383,7 +383,7 @@ abcgUtil.i: abcgUtil.cpp.i
 
 # target to preprocess a source file
 abcgUtil.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.i
 .PHONY : abcgUtil.cpp.i
 
 abcgUtil.s: abcgUtil.cpp.s
@@ -391,7 +391,7 @@ abcgUtil.s: abcgUtil.cpp.s
 
 # target to generate assembly for a file
 abcgUtil.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.s
 .PHONY : abcgUtil.cpp.s
 
 abcgWindow.o: abcgWindow.cpp.o
@@ -399,7 +399,7 @@ abcgWindow.o: abcgWindow.cpp.o
 
 # target to build an object file
 abcgWindow.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o
 .PHONY : abcgWindow.cpp.o
 
 abcgWindow.i: abcgWindow.cpp.i
@@ -407,7 +407,7 @@ abcgWindow.i: abcgWindow.cpp.i
 
 # target to preprocess a source file
 abcgWindow.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.i
 .PHONY : abcgWindow.cpp.i
 
 abcgWindow.s: abcgWindow.cpp.s
@@ -415,7 +415,7 @@ abcgWindow.s: abcgWindow.cpp.s
 
 # target to generate assembly for a file
 abcgWindow.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.s
 .PHONY : abcgWindow.cpp.s
 
 # Help Target
@@ -474,6 +474,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/julia/atividade2/ativ-2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/isa/Documents/pokemons/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

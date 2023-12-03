@@ -1,7 +1,7 @@
 abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o: \
- /home/julia/atividade2/ativ-2/abcg/abcgOpenGLFunction.cpp \
+ /home/isa/Documents/pokemons/abcg/abcgOpenGLFunction.cpp \
  /usr/include/stdc-predef.h \
- /home/julia/atividade2/ativ-2/abcg/abcgOpenGLFunction.hpp \
+ /home/isa/Documents/pokemons/abcg/abcgOpenGLFunction.hpp \
  /usr/include/c++/11/source_location \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -67,11 +67,11 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o: \
  /usr/include/c++/11/bits/ranges_base.h \
  /usr/include/c++/11/bits/max_size_type.h /usr/include/c++/11/numbers \
  /usr/include/c++/11/bits/string_view.tcc \
- /home/julia/atividade2/ativ-2/abcg/abcgOpenGLExternal.hpp \
+ /home/isa/Documents/pokemons/abcg/abcgOpenGLExternal.hpp \
  /usr/include/GL/glew.h /usr/include/c++/11/cstddef /usr/include/GL/glu.h \
  /usr/include/GL/gl.h \
- /home/julia/atividade2/ativ-2/abcg/abcgOpenGLError.hpp \
- /home/julia/atividade2/ativ-2/abcg/abcgException.hpp \
+ /home/isa/Documents/pokemons/abcg/abcgOpenGLError.hpp \
+ /home/isa/Documents/pokemons/abcg/abcgException.hpp \
  /usr/include/c++/11/stdexcept /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \

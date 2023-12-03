@@ -1,4 +1,4 @@
-# Install script for directory: /home/julia/atividade2/ativ-2/examples
+# Install script for directory: /home/isa/Documents/pokemons/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,6 +44,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/julia/atividade2/ativ-2/build/examples/pikachu/cmake_install.cmake")
+  include("/home/isa/Documents/pokemons/build/examples/pikachu/cmake_install.cmake")
 endif()
 

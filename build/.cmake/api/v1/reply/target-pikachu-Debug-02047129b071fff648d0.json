@@ -86,23 +86,23 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/julia/atividade2/ativ-2/abcg"
+					"path" : "/home/isa/Documents/pokemons/abcg"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/julia/atividade2/ativ-2/abcg/external/cppitertools"
+					"path" : "/home/isa/Documents/pokemons/abcg/external/cppitertools"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/julia/atividade2/ativ-2/abcg/external/fmt"
+					"path" : "/home/isa/Documents/pokemons/abcg/external/fmt"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/julia/atividade2/ativ-2/abcg/external/glm/.."
+					"path" : "/home/isa/Documents/pokemons/abcg/external/glm/.."
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/julia/atividade2/ativ-2/abcg/external/imgui"
+					"path" : "/home/isa/Documents/pokemons/abcg/external/imgui"
 				},
 				{
 					"backtrace" : 3,
@@ -112,12 +112,12 @@
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "/home/julia/atividade2/ativ-2/abcg/external"
+					"path" : "/home/isa/Documents/pokemons/abcg/external"
 				},
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "/home/julia/atividade2/ativ-2/abcg/external/tiny_obj_loader"
+					"path" : "/home/isa/Documents/pokemons/abcg/external/tiny_obj_loader"
 				}
 			],
 			"language" : "CXX",

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/julia/atividade2/ativ-2
+CMAKE_SOURCE_DIR = /home/isa/Documents/pokemons
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/julia/atividade2/ativ-2/build
+CMAKE_BINARY_DIR = /home/isa/Documents/pokemons/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/julia/atividade2/ativ-2/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/julia/atividade2/ativ-2/build/CMakeFiles /home/julia/atividade2/ativ-2/build/examples/pikachu//CMakeFiles/progress.marks
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/pikachu/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/julia/atividade2/ativ-2/build/CMakeFiles 0
+	cd /home/isa/Documents/pokemons/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/isa/Documents/pokemons/build/CMakeFiles /home/isa/Documents/pokemons/build/examples/pikachu//CMakeFiles/progress.marks
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/pikachu/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isa/Documents/pokemons/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/pikachu/clean
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/pikachu/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/pikachu/preinstall
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/pikachu/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/pikachu/preinstall
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/pikachu/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/julia/atividade2/ativ-2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/isa/Documents/pokemons/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/pikachu/CMakeFiles/pikachu.dir/rule:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/pikachu/CMakeFiles/pikachu.dir/rule
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/pikachu/CMakeFiles/pikachu.dir/rule
 .PHONY : examples/pikachu/CMakeFiles/pikachu.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ pikachu: examples/pikachu/CMakeFiles/pikachu.dir/rule
 
 # fast build rule for target.
 pikachu/fast:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/build
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/build
 .PHONY : pikachu/fast
 
 main.o: main.cpp.o
@@ -135,7 +135,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/main.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -143,7 +143,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/main.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -151,7 +151,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/main.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 model.o: model.cpp.o
@@ -159,7 +159,7 @@ model.o: model.cpp.o
 
 # target to build an object file
 model.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/model.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/model.cpp.o
 .PHONY : model.cpp.o
 
 model.i: model.cpp.i
@@ -167,7 +167,7 @@ model.i: model.cpp.i
 
 # target to preprocess a source file
 model.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/model.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/model.cpp.i
 .PHONY : model.cpp.i
 
 model.s: model.cpp.s
@@ -175,7 +175,7 @@ model.s: model.cpp.s
 
 # target to generate assembly for a file
 model.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/model.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/model.cpp.s
 .PHONY : model.cpp.s
 
 trackball.o: trackball.cpp.o
@@ -183,7 +183,7 @@ trackball.o: trackball.cpp.o
 
 # target to build an object file
 trackball.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/trackball.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/trackball.cpp.o
 .PHONY : trackball.cpp.o
 
 trackball.i: trackball.cpp.i
@@ -191,7 +191,7 @@ trackball.i: trackball.cpp.i
 
 # target to preprocess a source file
 trackball.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/trackball.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/trackball.cpp.i
 .PHONY : trackball.cpp.i
 
 trackball.s: trackball.cpp.s
@@ -199,7 +199,7 @@ trackball.s: trackball.cpp.s
 
 # target to generate assembly for a file
 trackball.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/trackball.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/trackball.cpp.s
 .PHONY : trackball.cpp.s
 
 window.o: window.cpp.o
@@ -207,7 +207,7 @@ window.o: window.cpp.o
 
 # target to build an object file
 window.cpp.o:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.o
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.o
 .PHONY : window.cpp.o
 
 window.i: window.cpp.i
@@ -215,7 +215,7 @@ window.i: window.cpp.i
 
 # target to preprocess a source file
 window.cpp.i:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.i
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.i
 .PHONY : window.cpp.i
 
 window.s: window.cpp.s
@@ -223,7 +223,7 @@ window.s: window.cpp.s
 
 # target to generate assembly for a file
 window.cpp.s:
-	cd /home/julia/atividade2/ativ-2/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.s
+	cd /home/isa/Documents/pokemons/build && $(MAKE) $(MAKESILENT) -f examples/pikachu/CMakeFiles/pikachu.dir/build.make examples/pikachu/CMakeFiles/pikachu.dir/window.cpp.s
 .PHONY : window.cpp.s
 
 # Help Target
@@ -258,6 +258,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/julia/atividade2/ativ-2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/isa/Documents/pokemons/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

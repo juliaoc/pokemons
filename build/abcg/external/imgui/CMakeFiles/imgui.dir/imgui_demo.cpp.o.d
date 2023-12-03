@@ -1,8 +1,8 @@
 abcg/external/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o: \
- /home/julia/atividade2/ativ-2/abcg/external/imgui/imgui_demo.cpp \
+ /home/isa/Documents/pokemons/abcg/external/imgui/imgui_demo.cpp \
  /usr/include/stdc-predef.h \
- /home/julia/atividade2/ativ-2/abcg/external/imgui/imgui.h \
- /home/julia/atividade2/ativ-2/abcg/external/imgui/imconfig.h \
+ /home/isa/Documents/pokemons/abcg/external/imgui/imgui.h \
+ /home/isa/Documents/pokemons/abcg/external/imgui/imconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h /usr/include/string.h \
